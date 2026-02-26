@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-beige: #F5F5F3;
+  --color-brand-olive: #2D3318;
+  --color-brand-gold: #D4AF37;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-brand-beige);
+    color: #1A1A1A;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, .font-serif {
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+/* Sticky Header Scrolled Styles */
+header:not(.no-transition) {
+  transition: padding 2.5s cubic-bezier(0.2, 0.8, 0.2, 1), 
+              background-color 2.5s ease,
+              backdrop-filter 2.5s ease;
+}
+
+header:not(.no-transition) .logo-container,
+header:not(.no-transition) .menu-wrapper {
+  transition: all 2.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+header.scrolled {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  background-color: #F5F5F3; /* Fond plein crème */
+  backdrop-filter: none;
+  mix-blend-mode: normal; 
+  z-index: 9999; /* Z-index élevé */
+}
+
+header.scrolled:not(.menu-open) .menu-wrapper {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+header.scrolled:not(.menu-open) .logo-container {
+  margin-bottom: 0;
+}
+
+header.menu-open {
+  background-color: #F5F5F3;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+header.menu-open .menu-wrapper {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+header.menu-open .logo-container {
+  margin-bottom: 1.5rem;
+}

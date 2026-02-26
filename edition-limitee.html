@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Édition Limitée | Huiles d'Olives d'Algérie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="bg-brand-beige text-black overflow-x-hidden">
+    
+    <!-- Navigation minimale -->
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 py-10 px-8 md:px-20 flex flex-col items-center mix-blend-multiply no-transition">
+      <div id="header-logo" class="logo-container text-2xl font-serif tracking-[0.2em] uppercase mb-6 cursor-pointer">Huiles d'Olives d'Algérie</div>
+      
+      <div class="menu-wrapper flex flex-col items-center space-y-4">
+        <nav class="hidden md:flex space-x-16 text-[10px] tracking-[0.4em] uppercase font-light">
+          <a href="/" class="hover:opacity-50 transition-opacity">Accueil</a>
+          <a href="/notre-vision.html" class="hover:opacity-50 transition-opacity">Notre vision</a>
+          <a href="#" class="hover:opacity-50 transition-opacity">La Collection</a>
+          <a href="/edition-limitee.html" class="hover:opacity-50 transition-opacity border-b border-black/20 pb-1">Édition limitée</a>
+          <a href="#" class="hover:opacity-50 transition-opacity">L'Art de Vivre</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Simple -->
+      <section class="relative min-h-[70vh] flex items-center pt-48 md:pt-64">
+        <div class="container mx-auto px-8 md:px-20 w-full">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 items-center">
+            
+            <!-- Texte à gauche -->
+            <div class="md:col-span-7 space-y-8 animate-fade-up">
+              <span class="text-brand-olive uppercase tracking-[0.5em] text-[10px] font-medium">Exclusivité 2026</span>
+              <h1 class="text-6xl md:text-8xl font-serif font-light leading-[1.1]">
+                L'Édition <i class="italic">Limitée.</i>
+              </h1>
+              <p class="text-xl md:text-2xl font-light text-black/60 max-w-lg leading-relaxed">
+                Une sélection rare, fruit d’un travail exigeant de repérage et de curation sur le terrain. Seulement 500 bouteilles numérotées, patiemment réunies pour les palais les plus exigeants.
+              </p>
+            </div>
+
+            <!-- Image à droite -->
+            <div class="md:col-span-5">
+              <div class="relative aspect-[3/4] overflow-hidden bg-[#ECECE8] shadow-2xl animate-fade-up delay-100">
+                <img 
+                  src="/hero-coffret.png" 
+                  alt="Le Coffret Édition Limitée Huiles d'Olives d'Algérie" 
+                  class="w-full h-full object-cover object-center scale-110 hover:scale-100 transition-transform duration-[2s] ease-out"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- La Sélection -->
+      <section class="py-24 md:py-48 bg-black/[0.02]">
+        <div class="container mx-auto px-8 md:px-20">
+          <div class="text-center mb-24 space-y-4">
+            <span class="text-brand-olive uppercase tracking-[0.4em] text-[10px] font-medium">La Sélection</span>
+            <h2 class="text-4xl md:text-6xl font-serif font-light">Le Coffret Signature</h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20">
+            <!-- Carte Produit 1 -->
+            <div class="group cursor-pointer space-y-8">
+              <div class="aspect-[3/4] bg-[#ECECE8] relative overflow-hidden flex items-center justify-center border border-black/5">
+                <span class="text-[10px] tracking-[0.4em] uppercase opacity-30">N° 001 - 166</span>
+              </div>
+              <div class="space-y-2 text-center">
+                <h3 class="text-xl font-serif">Cuvée Numérotée I</h3>
+                <p class="text-[10px] tracking-[0.2em] uppercase text-black/40 text-justify px-4">Notes d'amandes douces et de fleurs sauvages. Pressée au lever du jour.</p>
+              </div>
+            </div>
+
+            <!-- Carte Produit 2 -->
+            <div class="group cursor-pointer space-y-8">
+              <div class="aspect-[3/4] bg-[#ECECE8] relative overflow-hidden flex items-center justify-center border border-black/5">
+                <span class="text-[10px] tracking-[0.4em] uppercase opacity-30">N° 167 - 333</span>
+              </div>
+              <div class="space-y-2 text-center">
+                <h3 class="text-xl font-serif">Cuvée Numérotée II</h3>
+                <p class="text-[10px] tracking-[0.2em] uppercase text-black/40 text-justify px-4">Caractère corsé, ardence marquée. Une huile de caractère pour les connaisseurs.</p>
+              </div>
+            </div>
+
+            <!-- Carte Produit 3 -->
+            <div class="group cursor-pointer space-y-8">
+              <div class="aspect-[3/4] bg-[#ECECE8] relative overflow-hidden flex items-center justify-center border border-black/5">
+                <span class="text-[10px] tracking-[0.4em] uppercase opacity-30">N° 334 - 500</span>
+              </div>
+              <div class="space-y-2 text-center">
+                <h3 class="text-xl font-serif">Cuvée Numérotée III</h3>
+                <p class="text-[10px] tracking-[0.2em] uppercase text-black/40 text-justify px-4">Équilibre parfait entre douceur et amertume. La quintessence du domaine.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Notre Démarche -->
+      <section class="py-24 md:py-48 border-t border-black/5">
+        <div class="container mx-auto px-8 md:px-20">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 items-center">
+            <div class="space-y-12">
+              <div class="space-y-6">
+                <span class="text-brand-olive uppercase tracking-[0.4em] text-[10px] font-medium">Notre Démarche</span>
+                <h2 class="text-4xl md:text-6xl font-serif font-light leading-tight">
+                  La curation <br> au service de <i class="italic">l'excellence.</i>
+                </h2>
+              </div>
+              <div class="space-y-8 text-lg font-light text-black/60 leading-relaxed text-justify">
+                <p>
+                  Nous ne nous contentons pas de vendre de l'huile. Nous agissons comme des curateurs, repérant les micro-parcelles et les producteurs qui atteignent une perfection rare, mais restent souvent dans l'ombre.
+                </p>
+                <p>
+                  Notre rôle est de mettre en valeur ce savoir-faire, de garantir une qualité sans concession et de proposer ces trésors dans un écrin à leur mesure. Chaque bouteille est le fruit d'une rencontre humaine et d'une rigueur scientifique.
+                </p>
+              </div>
+            </div>
+            
+            <div class="aspect-square bg-[#ECECE8] relative overflow-hidden flex items-center justify-center">
+               <span class="text-[10px] tracking-[0.4em] uppercase opacity-30">Garantie d'Authenticité</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-24 md:py-48 bg-brand-olive text-brand-beige">
+        <div class="container mx-auto px-8 md:px-20 text-center space-y-12">
+          <h2 class="text-4xl md:text-7xl font-serif font-light italic">Rejoignez le cercle privilégié.</h2>
+          <p class="text-lg md:text-xl font-light opacity-80 max-w-2xl mx-auto">
+            Soyez informé en avant-première de nos prochaines sélections et bénéficiez d'un accès réservé aux futures éditions limitées.
+          </p>
+          <div class="pt-8">
+            <a href="#" class="inline-block border border-brand-beige/40 px-16 py-5 text-[11px] tracking-[0.3em] uppercase hover:bg-brand-beige hover:text-brand-olive transition-all duration-700">
+              S'inscrire à la liste privée
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-24 border-t border-black/5">
+      <div class="container mx-auto px-8 md:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-8">
+          <div class="md:col-span-2 space-y-8">
+            <div class="text-xl font-serif tracking-[0.2em] uppercase">Huiles d'Olives d'Algérie</div>
+            <p class="text-sm font-light text-black/50 max-w-xs leading-relaxed">
+              L'excellence de l'huile d'olive d'Algérie, de l'arbre à votre table. Engagement durable et qualité absolue.
+            </p>
+          </div>
+          
+          <div class="space-y-6">
+            <h4 class="text-[10px] tracking-[0.3em] uppercase font-medium">Boutique</h4>
+            <ul class="space-y-4 text-sm font-light text-black/60">
+              <li><a href="/" class="hover:text-black transition-colors">Accueil</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">Nos Huiles</a></li>
+              <li><a href="/edition-limitee.html" class="hover:text-black transition-colors">Édition Limitée</a></li>
+            </ul>
+          </div>
+
+          <div class="space-y-6">
+            <h4 class="text-[10px] tracking-[0.3em] uppercase font-medium">Maison</h4>
+            <ul class="space-y-4 text-sm font-light text-black/60">
+              <li><a href="#" class="hover:text-black transition-colors">Notre Histoire</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">Contact</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">Mentions Légales</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="mt-24 pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-8">
+          <p class="text-[10px] tracking-[0.2em] uppercase text-black/30">© 2026 Huiles d'Olives d'Algérie. Tous droits réservés.</p>
+          <div class="flex space-x-8">
+             <a href="#" class="text-[10px] tracking-[0.2em] uppercase text-black/30 hover:text-black transition-colors">Instagram</a>
+             <a href="#" class="text-[10px] tracking-[0.2em] uppercase text-black/30 hover:text-black transition-colors">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
