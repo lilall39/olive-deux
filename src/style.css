@@ -85,3 +85,16 @@ header.menu-open .menu-wrapper {
 header.menu-open .logo-container {
   margin-bottom: 1.5rem;
 }
+
+/* Affichage du menu sur mobile quand ouvert */
+header.menu-open nav {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+header.menu-open nav a {
+  padding: 0.5rem 0;
+}
