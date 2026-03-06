@@ -13,133 +13,180 @@
   <body class="bg-brand-beige text-black overflow-x-hidden">
     
     <!-- Navigation minimale -->
-    <header id="main-header" class="fixed top-0 left-0 w-full z-50 py-10 px-6 md:px-20 flex flex-col items-center mix-blend-multiply no-transition">
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 py-10 px-6 md:px-20 flex flex-col items-center bg-white no-transition">
       <div id="header-logo" class="logo-container text-base md:text-2xl font-serif tracking-[0.2em] uppercase mb-6 cursor-pointer text-center">Huiles d'Olives d'Algérie</div>
       
       <div class="menu-wrapper flex flex-col items-center space-y-4">
         <nav class="hidden md:flex space-x-16 text-[10px] tracking-[0.4em] uppercase font-light">
-          <a href="/" class="hover:opacity-50 transition-opacity">Marché & Positionnement</a>
-          <a href="/notre-vision.html" class="hover:opacity-50 transition-opacity border-b border-black/20 pb-1">Notre vision</a>
-          <a href="#" class="hover:opacity-50 transition-opacity">La Collection</a>
-          <a href="/edition-limitee.html" class="hover:opacity-50 transition-opacity">Édition limitée</a>
+          <a href="/" class="hover:opacity-50 transition-opacity">NOTRE MAISON</a>
+          <a href="/notre-vision.html" class="hover:opacity-50 transition-opacity border-b border-black/20 pb-1">LA COLLECTION</a>
+          <a href="/la-collection.html" class="hover:opacity-50 transition-opacity">À PROPOS DE NOUS</a>
+          <a href="/contact.html" class="hover:opacity-50 transition-opacity">NOUS CONTACTER</a>
         </nav>
       </div>
     </header>
 
     <main>
       <!-- Hero Notre Vision -->
-      <section class="relative min-h-[60vh] flex items-center pt-48 md:pt-64">
-        <div class="container mx-auto px-8 md:px-20 text-center space-y-8 animate-fade-up">
-          <span class="text-brand-olive uppercase tracking-[0.5em] text-[10px] font-medium">Manifeste</span>
-          <h1 class="text-6xl md:text-8xl font-serif font-light leading-[1.1]">
-            Redéfinir le <i class="italic">prestige.</i>
-          </h1>
-          <p class="text-xl md:text-2xl font-light text-black/60 max-w-2xl mx-auto leading-relaxed">
-            Porter les terroirs d'Algérie au rang des plus grandes tables mondiales par une curation sans compromis.
-          </p>
+      <section class="relative min-h-[95vh] w-full overflow-hidden flex items-center justify-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+          <img 
+            src="/texture-huile.png" 
+            alt="La Collection - Texture d'huile précieuse" 
+            class="w-full h-full object-cover object-right"
+          />
+          <!-- Light Overlay -->
+          <div class="absolute inset-0 bg-white/15"></div>
+          <!-- Right Side Luminous Gradient -->
+          <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to left, rgba(255,200,100,0.45), transparent 40%);"></div>
+          <!-- Subtle Luminous Halo -->
+          <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle at 65% 40%, rgba(255,210,120,0.35), transparent 60%);"></div>
+          
+          <!-- SVG Wave Divider -->
+          <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-10 pointer-events-none translate-y-[1px]">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[40px] md:h-[80px]">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.37,103.4,113.3,111.41,171.21,111.41c107,0,236.17-43.41,321.39-56.44Z" fill="#ffffff"></path>
+            </svg>
+          </div>
         </div>
+
+        <!-- Content -->
+        <div class="container mx-auto px-8 md:px-20 relative z-10 text-center text-black pt-32 md:pt-48">
+          <div class="max-w-4xl mx-auto flex flex-col items-center justify-center animate-fade-up">
+            <div class="space-y-4">
+              <h1 class="text-4xl md:text-6xl font-serif font-light leading-tight">
+                La Collection
+              </h1>
+            </div>
+            
+            <p class="text-xl md:text-2xl font-light text-black/90 max-w-2xl mx-auto leading-relaxed mt-5">
+              Chaque huile révèle la richesse d’un terroir et l’équilibre d’un savoir-faire.<br>
+              Nos sélections mettent en lumière des huiles d’olive rares, issues d’oliveraies méditerranéennes.
+            </p>
+
+            <div class="pt-16 mb-20"></div>
+          </div>
+        </div>
+        <a href="/" class="absolute bottom-20 right-8 md:right-20 z-20 group inline-flex items-center justify-center overflow-hidden border border-black/20 w-48 py-3 text-[11px] tracking-[0.3em] uppercase transition-all duration-700 hover:border-black bg-zinc-800 text-white">
+          <span class="relative z-10">Notre maison</span>
+          <div class="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700 ease-in-out opacity-10"></div>
+        </a>
       </section>
 
-      <!-- 1. Le Constat -->
-      <section class="py-16 md:py-48 border-t border-black/5">
+      <!-- Introduction Collection -->
+      <section class="pt-4 pb-2 md:pt-6 md:pb-4 bg-white">
         <div class="container mx-auto px-8 md:px-20">
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24 items-center">
-            <div class="md:col-span-5 order-2 md:order-1">
-              <div class="aspect-[4/5] bg-black/5 relative overflow-hidden group shadow-2xl">
-                <img 
-                  src="/enjeu-marque.png" 
-                  alt="L'enjeu de marque - Huiles d'Olives d'Algérie" 
-                  class="w-full h-full object-cover object-center transition-transform duration-[2s] ease-out group-hover:scale-110"
-                  style="filter: contrast(1.06) brightness(1.02) saturate(1.03);"
-                />
-                <!-- Overlay et vignettage éditorial pour protéger le centre -->
-                <div class="absolute inset-0 bg-black/25 mix-blend-multiply pointer-events-none"></div>
-                <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle at 45% 55%, rgba(255,255,255,0.08) 0%, transparent 40%, rgba(0,0,0,0.75) 140%);"></div>
-              </div>
-            </div>
-            <div class="md:col-span-7 space-y-12 order-1 md:order-2 md:-ml-8">
-              <div class="space-y-6">
-                <span class="text-brand-olive uppercase tracking-[0.4em] text-[10px] font-medium">01. Le Constat</span>
-                <h2 class="text-4xl md:text-6xl font-serif font-light leading-tight">Un trésor dans l'ombre.</h2>
-              </div>
-              <div class="space-y-8 text-lg font-light text-black/60 leading-relaxed">
-                <p>
-                  Malgré une qualité reconnue et des distinctions internationales régulières, l’huile d’olive algérienne reste largement absente du segment premium mondial.
-                </p>
-                <p>
-                  Le folklore prend souvent le pas sur l’excellence technique, et les circuits de distribution classiques ne permettent pas de valoriser le travail des producteurs d’élite. L’enjeu n’est pas la production, mais la capacité à créer une marque capable de dialoguer avec les codes du luxe.
-                </p>
-              </div>
+          <div class="max-w-[720px] mx-auto text-center space-y-12">
+            <h2 class="text-3xl md:text-5xl font-serif font-light leading-tight">
+              Les huiles de la collection
+            </h2>
+            <div class="space-y-8 text-xl font-light text-black/60 leading-relaxed">
+              <p>
+                Nos huiles sont sélectionnées pour révéler la richesse des terroirs méditerranéens.<br>
+                Chaque cuvée exprime un équilibre entre fruit, intensité et savoir-faire.
+              </p>
+              <p>
+                Notre approche privilégie des productions limitées, issues d’oliveraies cultivées avec soin et pressées à froid afin de préserver toute la pureté du fruit.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 2. L'Opportunité -->
-      <section class="py-16 md:py-48 bg-black/[0.02]">
-        <div class="container mx-auto px-8 md:px-20">
-          <div class="max-w-6xl mx-auto text-center space-y-12">
-            <span class="text-brand-olive uppercase tracking-[0.4em] text-[10px] font-medium">02. L'Opportunité</span>
-            <h2 class="text-4xl md:text-6xl font-serif font-light leading-tight">Un marché en quête d'authenticité.</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 pt-8 text-left">
-              <div class="space-y-6">
-                <p class="text-lg font-light text-black/60 leading-relaxed">
-                  Le marché de l’épicerie fine et du cadeau gourmet est en pleine mutation : les consommateurs recherchent des produits porteurs de sens, une origine traçable et un récit fort.
-                </p>
-                <p class="text-lg font-light text-black/60 leading-relaxed">
-                  Cette quête du “vrai” ouvre une place encore largement vacante pour une marque algérienne haut de gamme, capable d’allier héritage, exigence de sélection et codes esthétiques contemporains.
-                </p>
-              </div>
-              <div class="space-y-6">
-                <p class="text-lg font-light text-black/60 leading-relaxed">
-                  L’huile d’olive s’impose progressivement comme un produit de culture, que l’on découvre, que l’on compare, que l’on choisit pour ses terroirs, ses variétés et ses millésimes.
-                </p>
-                <p class="text-lg font-light text-black/60 leading-relaxed">
-                  Notre ambition est de structurer cet accès à l’excellence algérienne, de la rendre lisible, désirable et crédible dans des circuits exigeants, sans jamais trahir la réalité du produit ni celle des producteurs.
-                </p>
-              </div>
+      <!-- Nos huiles sélectionnées -->
+      <section class="relative pt-0 pb-12 md:pt-0 md:pb-32" style="background: linear-gradient(to right, #ffffff, #fffbc8 40%, #fffbc8 60%, #ffffff);">
+        <!-- SVG Wave Divider (Miroir) -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] z-10 pointer-events-none -translate-y-[1px]">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[40px] md:h-[80px] scale-y-[-1]">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.37,103.4,113.3,111.41,171.21,111.41c107,0,236.17-43.41,321.39-56.44Z" fill="#ffffff"></path>
+          </svg>
+        </div>
+        
+        <div class="container mx-auto px-8 md:px-20 space-y-16 md:space-y-24 relative z-20">
+          
+          <!-- Bloc 1 : Image centrée (Focus) -->
+          <div class="flex flex-col items-center text-center space-y-12 animate-fade-up pt-12 md:pt-24">
+            <div class="w-full max-w-[420px] max-h-[468px] aspect-[3/4] bg-black/5 overflow-hidden shadow-2xl lightbox-trigger cursor-pointer">
+              <img src="/coffret-collection.png" alt="Coffret de dégustation - La Collection" class="w-full h-full object-cover animate-slow-zoom">
+            </div>
+            <div class="space-y-6">
+              <h3 class="text-xl md:text-3xl font-serif font-light">L'Édition Limitée</h3>
+              <p class="text-xl font-light text-black/60 max-w-xl mx-auto leading-relaxed">
+                Une sélection rare, fruit d’un travail exigeant de repérage et de curation sur le terrain. Seulement 500 bouteilles numérotées, patiemment réunies pour les palais les plus exigeants.
+              </p>
             </div>
           </div>
+
+          <!-- Bloc 2 : Image à gauche -->
+          <div class="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-32">
+            <div class="w-full max-w-[420px] max-h-[468px] aspect-[3/4] bg-black/5 overflow-hidden shadow-2xl lightbox-trigger cursor-pointer">
+              <img src="/coffret-nafees.png" alt="Coffret Nafees - Collection Grands Crus" class="w-full h-full object-cover animate-slow-zoom delay-2000">
+            </div>
+            <div class="max-w-md space-y-8">
+              <h3 class="text-xl md:text-3xl font-serif font-light">Trois grands crus d’huile d’olive.</h3>
+              <p class="text-xl font-light text-black/60 leading-relaxed">
+                Une sélection de grands crus révélant la richesse des terroirs et l’exigence d’un savoir-faire d’exception.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bloc 3 : Texte à gauche -->
+          <div class="flex flex-col-reverse md:flex-row items-center justify-center gap-16 md:gap-32">
+            <div class="max-w-md space-y-8 text-center md:text-left">
+              <h3 class="text-xl md:text-3xl font-serif font-light">Écrin Grand Cru</h3>
+              <p class="text-xl font-light text-black/60 leading-relaxed">
+                Trois huiles rares réunies dans un coffret d'exception.
+              </p>
+            </div>
+            <div class="w-full max-w-[420px] overflow-hidden shadow-2xl lightbox-trigger cursor-pointer">
+              <img src="/bouteilles-nafees.png" alt="Bouteilles Nafees - L'Art de l'Olive" class="w-full h-auto block animate-slow-zoom delay-4000">
+            </div>
+          </div>
+
         </div>
       </section>
 
-      <!-- 3. La Réponse -->
-      <section class="py-16 md:py-48">
-        <div class="container mx-auto px-8 md:px-20">
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24 items-center">
-            <div class="md:col-span-7 space-y-12">
-              <div class="space-y-6">
-                <span class="text-brand-olive uppercase tracking-[0.4em] text-[10px] font-medium">03. La Réponse</span>
-                <h2 class="text-4xl md:text-6xl font-serif font-light leading-tight">La curation comme sceau de qualité.</h2>
-              </div>
-              <div class="space-y-8 text-lg font-light text-black/60 leading-relaxed">
-                <p>
-                  Notre réponse est celle d’une marque-curatrice. Nous ne sommes pas des exploitants agricoles : nous sommes des sélectionneurs. Cette indépendance nous permet de ne retenir que l’excellence, sans contrainte de volume ni logique de rendement.
-                </p>
-                <p>
-                  Nous identifions des producteurs et des lots d’exception, reconnus pour la qualité de leur travail et la précision de leurs méthodes. Nous révélons ces huiles dans un écrin sobre et exigeant.
-                </p>
-                <p>
-                  Notre rôle est de créer un pont entre des savoir-faire ancrés dans les terroirs algériens et les codes du monde premium contemporain.
-                </p>
-              </div>
+      <!-- Section Notre Vision - Bandeau Pleine Largeur -->
+      <section class="relative h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+          <img 
+            src="/notre-vision-bg.png" 
+            alt="Notre Vision - Terroirs d'Algérie" 
+            class="w-full h-full object-cover"
+          />
+          <!-- Dark Overlay -->
+          <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <!-- Bouton coin droit -->
+        <a href="/la-collection.html" class="absolute bottom-8 right-8 md:right-20 z-20 group inline-flex items-center justify-center overflow-hidden border border-white/30 w-80 py-3 px-6 text-[11px] tracking-[0.3em] uppercase transition-all duration-700 hover:border-white bg-black text-white">
+          <span class="relative z-10">À propos de nous</span>
+          <div class="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700 ease-in-out opacity-10"></div>
+        </a>
+
+        <!-- Content -->
+        <div class="container mx-auto px-8 md:px-20 pt-20 relative z-10 text-center text-white">
+          <div class="max-w-4xl mx-auto space-y-8">
+            <div class="space-y-4">
+              <h2 class="text-4xl md:text-6xl font-serif font-light leading-tight">
+                Une collection pensée pour grandir
+              </h2>
             </div>
-            <div class="md:col-span-5 md:mt-48">
-              <div class="aspect-square bg-brand-olive/5 relative overflow-hidden group shadow-2xl">
-                <img 
-                  src="/selection-curatoriale.png" 
-                  alt="Sélection Curatoriale - Huiles d'Olives d'Algérie" 
-                  class="w-full h-full object-cover object-center transition-transform duration-[2s] ease-out group-hover:scale-110"
-                />
-              </div>
-            </div>
+            
+            <p class="text-xl md:text-2xl font-light text-white/90 max-w-2xl mx-auto leading-relaxed">
+              Notre collection s'inscrit dans une ambition plus large : faire rayonner les grands terroirs oléicoles d'Algérie sur les marchés premium.<br><br>
+              À travers une sélection exigeante et un positionnement haut de gamme, nous construisons une marque capable de porter ces huiles d'exception à l'international.
+            </p>
+
           </div>
         </div>
       </section>
 
     </main>
 
-    <footer class="py-24 border-t border-black/5 mt-24">
+    <footer class="py-24 border-t border-black/5 mt-0">
       <div class="container mx-auto px-8 md:px-20">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-8">
           <div class="md:col-span-2 space-y-8">
@@ -152,9 +199,9 @@
           <div class="space-y-6">
             <h4 class="text-[10px] tracking-[0.3em] uppercase font-medium">Menu</h4>
             <ul class="space-y-4 text-sm font-light text-black/60">
-              <li><a href="/" class="hover:text-black transition-colors">Marché & Positionnement</a></li>
+              <li><a href="/" class="hover:text-black transition-colors">NOTRE MAISON</a></li>
               <li><a href="/notre-vision.html" class="hover:text-black transition-colors font-medium">Notre Vision</a></li>
-              <li><a href="#" class="hover:text-black transition-colors">La Collection</a></li>
+              <li><a href="/la-collection.html" class="hover:text-black transition-colors">À propos de nous</a></li>
               <li><a href="/edition-limitee.html" class="hover:text-black transition-colors">Édition Limitée</a></li>
             </ul>
           </div>
@@ -171,5 +218,38 @@
     </footer>
 
     <script type="module" src="/src/main.js"></script>
+    <div id="lightbox" class="lightbox-overlay" aria-hidden="true">
+      <div class="lightbox-backdrop"></div>
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-img">
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll('.lightbox-trigger').forEach(el => {
+        el.addEventListener('click', () => {
+          const img = el.querySelector('img');
+          if (!img) return;
+          const lb = document.getElementById('lightbox');
+          const lbImg = lb.querySelector('.lightbox-img');
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          lb.classList.add('open');
+          lb.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+      document.querySelector('.lightbox-backdrop').addEventListener('click', () => {
+        document.getElementById('lightbox').classList.remove('open');
+        document.getElementById('lightbox').setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && document.getElementById('lightbox').classList.contains('open')) {
+          document.getElementById('lightbox').classList.remove('open');
+          document.getElementById('lightbox').setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      });
+    </script>
   </body>
 </html>

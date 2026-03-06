@@ -13,51 +13,69 @@
   <body class="bg-brand-beige text-black overflow-x-hidden">
     
     <!-- Navigation minimale -->
-    <header id="main-header" class="fixed top-0 left-0 w-full z-50 py-10 px-6 md:px-20 flex flex-col items-center mix-blend-multiply no-transition">
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 py-10 px-6 md:px-20 flex flex-col items-center bg-white no-transition">
       <div id="header-logo" class="logo-container text-base md:text-2xl font-serif tracking-[0.2em] uppercase mb-6 cursor-pointer text-center">Huiles d'Olives d'Algérie — Marché & Investissement</div>
       
       <div class="menu-wrapper flex flex-col items-center space-y-4">
         <nav class="hidden md:flex space-x-16 text-[10px] tracking-[0.4em] uppercase font-light">
-          <a href="/" class="hover:opacity-50 transition-opacity">Marché & Positionnement</a>
-          <a href="/notre-vision.html" class="hover:opacity-50 transition-opacity">Notre vision</a>
-          <a href="#" class="hover:opacity-50 transition-opacity">La Collection</a>
-          <a href="/edition-limitee.html" class="hover:opacity-50 transition-opacity">Édition limitée</a>
+          <a href="/" class="hover:opacity-50 transition-opacity">NOTRE MAISON</a>
+          <a href="/notre-vision.html" class="hover:opacity-50 transition-opacity">LA COLLECTION</a>
+          <a href="/la-collection.html" class="hover:opacity-50 transition-opacity">À PROPOS DE NOUS</a>
+          <a href="/contact.html" class="hover:opacity-50 transition-opacity">NOUS CONTACTER</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="relative min-h-screen flex items-center pt-32 md:pt-48">
+      <section class="relative min-h-[70vh] flex items-center pt-44 md:pt-60 bg-[#8b8132] overflow-hidden">
+        <!-- Shape Divider - Bord ondulé naturel (Haut) -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] z-10 pointer-events-none -translate-y-[1px]">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[40px] md:h-[80px] scale-y-[-1]">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.37,103.4,113.3,111.41,171.21,111.41c107,0,236.17-43.41,321.39-56.44Z" fill="#ffffff"></path>
+          </svg>
+        </div>
+        
         <div class="container mx-auto px-8 md:px-20 w-full">
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 items-center">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24 items-start">
             
-            <!-- Colonne Texte (Desktop: 7/12) -->
-            <div class="md:col-span-7 order-2 md:order-1 mt-12 md:mt-0">
+            <!-- Colonne Texte (Desktop: 6/12) -->
+            <div class="md:col-span-6 order-2 md:order-1 mt-12 md:mt-0">
               <div class="max-w-2xl space-y-12">
                 <div class="space-y-6">
-                  <h1 class="text-6xl md:text-8xl lg:text-9xl font-serif font-light leading-[1] tracking-tight opacity-0 animate-fade-up delay-100">
-                    L'or liquide d'<br> <i class="italic">Algérie.</i>
+                  <h1 class="text-[2.5rem] md:text-[4rem] lg:text-[5rem] font-serif font-light leading-[1] tracking-tight opacity-0 animate-fade-up delay-100">
+                    Huile d’olive d’exception<br> <i class="italic whitespace-nowrap">du Maghreb</i>
                   </h1>
+                  <h2 class="text-xl md:text-2xl font-serif italic text-brand-olive opacity-0 animate-fade-up delay-150">
+                    L’or liquide des terres d’Algérie
+                  </h2>
                 </div>
                 
                 <p class="text-xl md:text-2xl font-light text-black/60 max-w-lg leading-relaxed opacity-0 animate-fade-up delay-200">
-                  Curateurs d’huiles d’exception. Nous ne produisons pas : nous sélectionnons, nous révélons, nous proposons. Notre rôle est d’identifier l’excellence déjà reconnue et de la mettre en lumière, dans un cadre premium.
+                  Issue d’oliveraies méditerranéennes et pressée à froid, nos huiles révèlent toute la richesse de son terroir.
                 </p>
 
-                <p class="text-base md:text-lg font-bold text-black/80 whitespace-nowrap opacity-0 animate-fade-up delay-300">
-                  Origine rare. Segment premium. Modèle sélectif à forte valeur.
+                <p class="text-base md:text-lg font-bold text-brand-olive whitespace-nowrap opacity-0 animate-fade-up delay-300">
+                  Origine rare • Production sélective • Positionnement premium
                 </p>
+
+                <div class="pt-28 mb-16 md:mb-24 flex flex-wrap gap-4 md:gap-8 opacity-0 animate-fade-up delay-[400ms]">
+                  <a href="/notre-vision.html" class="group relative inline-flex items-center justify-center overflow-hidden border border-black/20 w-64 py-4 text-[11px] tracking-[0.3em] uppercase transition-all duration-700 hover:border-black bg-zinc-800 text-white">
+                    <span class="relative z-10">Découvrir l’huile</span>
+                    <div class="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700 ease-in-out opacity-10"></div>
+                  </a>
+                </div>
                 
               </div>
             </div>
 
-            <!-- Colonne Image (Desktop: 5/12) -->
-            <div class="md:col-span-5 order-1 md:order-2">
-              <div class="relative aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-[#ECECE8] opacity-0 animate-fade-up delay-100 shadow-2xl mt-12">
+            <!-- Colonne Image (Desktop: 6/12) -->
+            <div class="md:col-span-6 order-1 md:order-2">
+              <div class="relative aspect-[4/6] md:aspect-[5/7] overflow-hidden bg-[#ECECE8] opacity-0 animate-fade-up delay-100 shadow-2xl mt-0">
                 <img 
-                  src="/hero-orchard.png" 
-                  alt="L'or liquide d'Algérie" 
-                  class="w-full h-full object-cover object-center scale-110 hover:scale-100 transition-transform duration-[2s] ease-out"
+                  src="/hero-premium-pour.png" 
+                  alt="Huile d’olive d’exception" 
+                  class="w-full h-full object-cover object-center animate-ken-burns"
+                  style="transform-origin: top center;"
                 />
                 <!-- Accent subtil doré -->
                 <div class="absolute bottom-0 right-0 w-24 h-[1px] bg-brand-gold/30"></div>
@@ -68,150 +86,140 @@
           </div>
         </div>
 
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:block opacity-30">
-          <div class="w-[1px] h-16 bg-black animate-pulse"></div>
+        <!-- Shape Divider - Bord ondulé naturel -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-0 pointer-events-none translate-y-[1px]">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[40px] md:h-[80px]">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.37,103.4,113.3,111.41,171.21,111.41c107,0,236.17-43.41,321.39-56.44Z" fill="#ffffff"></path>
+          </svg>
         </div>
+
       </section>
 
-      <!-- Section La Maison -->
-      <section class="py-16 md:py-48 border-t border-black/5">
+      <section class="pt-4 pb-12 md:pt-24 md:pb-16 bg-white">
         <div class="container mx-auto px-8 md:px-20">
-          <div class="max-w-4xl mx-auto text-center space-y-12">
-            <span class="text-[#1A1D0E] uppercase tracking-[0.4em] text-[11px] font-medium">L'Esprit d'Algérie</span>
-            <h2 class="text-4xl md:text-6xl font-serif font-light leading-tight">
-              Un marché structuré, une origine absente.
+          <div class="max-w-3xl mx-auto text-center space-y-8 animate-fade-up md:-mt-16">
+            <h2 class="text-3xl md:text-5xl font-serif font-light leading-tight">
+              Des huiles nées de terroirs anciens
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-8 text-left">
-              <p class="text-lg font-light text-black/60 leading-relaxed">
-                Le marché mondial de l’huile d’olive représente aujourd’hui près de 20 milliards USD, avec une projection à plus de 30 milliards USD d’ici 2032, portée par une croissance annuelle estimée entre 4 et 6 %. L’Europe en constitue le principal bassin de consommation, avec un marché estimé entre 15 et 20 milliards USD, historiquement dominé par trois origines : l’Italie, l’Espagne et la Grèce.
-              </p>
-              <p class="text-lg font-light text-black/60 leading-relaxed">
-                Ces pays occupent l’espace premium par la marque, la distribution et l’antériorité culturelle. Pourtant, des huiles algériennes régulièrement primées à l’international restent quasi absentes de ce segment haut de gamme européen. Le déficit n’est pas qualitatif. Il est stratégique.
-              </p>
-            </div>
+            <p class="text-xl md:text-2xl font-light text-black/60 leading-relaxed">
+              Cultivée sous le soleil méditerranéen, nos huiles sont le fruit d’un savoir-faire patient et précis.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- Section Notre Différence -->
-      <section class="py-16 md:py-36 bg-black/[0.02]">
+      <section class="pt-0 pb-16 md:pt-8 md:pb-8 bg-white">
         <div class="container mx-auto px-8 md:px-20">
-          <div class="max-w-4xl mx-auto space-y-16">
-            <div class="space-y-6 text-center">
-              <span class="text-[#1A1D0E] uppercase tracking-[0.4em] text-[11px] font-medium">Notre Engagement</span>
-              <h2 class="text-4xl md:text-6xl font-serif font-light leading-tight">
-                Notre différence & <br> notre accès au marché.
-              </h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
-              <div class="space-y-8">
-                <h3 class="text-xl font-serif italic">Une crédibilité construite par le choix</h3>
-                <p class="text-lg font-light text-black/60 leading-relaxed">
-                  Notre point de départ n’est pas une promesse abstraite de qualité, mais des produits déjà reconnus par des jurys internationaux dans des concours de référence. Nous nous appuyons sur des validations existantes pour réduire le risque produit : les huiles sélectionnées ont déjà fait leurs preuves en dégustation et en évaluation professionnelle.
-                </p>
-                <p class="text-lg font-light text-black/60 leading-relaxed">
-                  L’origine algérienne demeure rare dans l’univers premium européen. Cette rareté n’est pas une posture marketing : elle crée une différenciation naturelle dans des rayons et des coffrets où certaines origines sont déjà bien installées. Notre rôle est de rendre cette origine lisible, crédible et désirable, sans l’exotiser ni la folkloriser.
-                </p>
-              </div>
-
-              <div class="space-y-8">
-                <h3 class="text-xl font-serif italic">Un modèle curatorial</h3>
-                <p class="text-lg font-light text-black/60 leading-relaxed">
-                  Nous sélectionnons des producteurs, des lots et des profils aromatiques précis. Cette exigence permet de limiter le risque lié à la production, d’installer une crédibilité immédiate par la rigueur du choix, et de bâtir des relations durables sur des volumes maîtrisés.
-                </p>
-                
-                <div class="pt-8 border-t border-black/5">
-                  <p class="text-[12px] tracking-[0.3em] uppercase font-semibold text-brand-olive mb-6">La barrière identifiée à l’entrée</p>
-                  <ul class="space-y-4 text-lg font-light text-black/60 italic">
-                    <li>— La qualité de la sélection</li>
-                    <li>— La justesse du positionnement</li>
-                    <li>— La confiance construite avec des producteurs partenaires</li>
-                  </ul>
-                </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
+            
+            <!-- Colonne Gauche : Image -->
+            <div class="order-2 md:order-1">
+              <div class="relative aspect-[4/5] overflow-hidden bg-[#ECECE8] shadow-xl">
+                <img 
+                  src="/olives-selection.png" 
+                  alt="Olives soigneusement sélectionnées" 
+                  class="w-full h-full object-cover object-center animate-ken-burns"
+                  style="transform-origin: center right;"
+                />
               </div>
             </div>
+
+            <!-- Colonne Droite : Texte -->
+            <div class="order-1 md:order-2 space-y-8">
+              <div class="space-y-6 relative">
+                <div class="absolute top-1/2 left-0 -translate-y-1/2 w-3/4 h-3/4 bg-[#8b8132]/40 blur-[100px] rounded-full pointer-events-none"></div>
+                <span class="text-black uppercase tracking-[0.5em] text-[13px] font-bold block relative z-10">Le Terroir</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-light leading-tight relative z-10">
+                  Des olives soigneusement sélectionnées
+                </h2>
+              </div>
+              <p class="text-xl font-light text-black/60 leading-relaxed max-w-lg">
+                Récoltées à maturité dans les oliveraies méditerranéennes, les olives sont sélectionnées avec soin puis pressées à froid pour préserver toute la richesse de leurs arômes.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <!-- Section Marché & Canaux -->
-      <section class="py-16 md:py-48">
+      <!-- Section La Transmission -->
+      <section class="pt-0 pb-8 md:pt-0 md:pb-16 bg-white">
+        <div class="container mx-auto px-8 md:px-20 md:-mt-24">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
+            
+            <!-- Colonne Gauche : Texte -->
+            <div class="space-y-8 order-2 md:order-1 md:pt-12">
+              <div class="space-y-6 relative">
+                <div class="absolute top-1/2 left-0 -translate-y-1/2 w-3/4 h-3/4 bg-[#8b8132]/40 blur-[100px] rounded-full pointer-events-none"></div>
+                <span class="text-black uppercase tracking-[0.5em] text-[13px] font-bold block relative z-10">Une vision contemporaine</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-light leading-tight relative z-10">
+                  Une vision contemporaine de l'huile d'olive
+                </h2>
+              </div>
+              <div class="space-y-6 text-xl font-light text-black/60 leading-relaxed max-w-lg">
+                <p>
+                  L'huile d'olive possède une histoire millénaire. Notre ambition est de lui offrir une expression contemporaine.
+                </p>
+                <p>
+                  Nous concevons chaque collection comme un objet culturel autant que gastronomique : une rencontre entre terroir, goût et esthétique.
+                </p>
+                <p>
+                  À travers nos coffrets et nos sélections, nous souhaitons révéler la richesse des huiles d'olive méditerranéennes dans un univers sobre, exigeant et résolument tourné vers le monde premium.
+                </p>
+              </div>
+            </div>
+
+            <!-- Colonne Droite : Vidéo -->
+            <div class="relative aspect-[4/5] overflow-hidden bg-[#ECECE8] shadow-xl order-1 md:order-2">
+              <video 
+                src="/2 olive video.webm" 
+                autoplay 
+                muted 
+                loop 
+                playsinline 
+                class="w-full h-full object-cover scale-[1.3]"
+              ></video>
+              <div class="absolute inset-0 bg-black/5 pointer-events-none"></div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Section La Curation -->
+      <section class="pb-16 md:pb-32 bg-white">
         <div class="container mx-auto px-8 md:px-20">
-          <div class="max-w-5xl mx-auto space-y-16">
-            <!-- Titre en premier -->
-            <div class="space-y-6 text-center">
-              <span class="text-[#1A1D0E] uppercase tracking-[0.4em] text-[11px] font-medium">Distribution</span>
-              <h2 class="text-4xl md:text-6xl font-serif font-light leading-tight">
-                Marché & canaux, <br class="hidden md:block">
-                une distribution <i class="italic">choisie.</i>
-              </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
+            
+            <!-- Colonne Gauche : Image -->
+            <div class="relative aspect-[4/5] overflow-hidden bg-[#ECECE8] shadow-xl">
+              <img 
+                src="/sceau-curation.png" 
+                alt="Sceau de curation premium" 
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-black/5 pointer-events-none"></div>
             </div>
 
-            <!-- Pie Chart Opérationnel avec Labels Intégrés -->
-            <div class="max-w-6xl mx-auto">
-              <div class="text-center mb-10">
-                <h3 class="font-serif italic text-xl md:text-2xl text-brand-olive opacity-80">Les piliers opérationnels du modèle</h3>
+            <!-- Colonne Droite : Texte -->
+            <div class="space-y-8">
+              <div class="space-y-6 relative">
+                <div class="absolute top-1/2 left-0 -translate-y-1/2 w-3/4 h-3/4 bg-[#8b8132]/40 blur-[100px] rounded-full pointer-events-none"></div>
+                <span class="text-black uppercase tracking-[0.5em] text-[13px] font-bold block relative z-10">Sceau de Qualité</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-light leading-tight relative z-10">
+                  La curation comme<br> sceau de qualité
+                </h2>
               </div>
-              <div class="bg-[#F9F9F7] p-10 md:p-16 border border-black/5 rounded-sm">
-                <div class="flex flex-col lg:flex-row items-center justify-between gap-16">
-                  <!-- Graphique Pie avec Labels -->
-                  <div class="relative w-full max-w-[500px] aspect-square shrink-0 flex-1">
-                    <svg viewBox="0 0 100 100" class="w-full h-full">
-                      <!-- 
-                        Segments pleins avec calcul manuel des arcs et positions de texte.
-                        Centre: 50,50 | Rayon: 45
-                      -->
-                      
-                      <!-- Canaux sélectifs (25%) - #3A4128 (Olive) -->
-                      <path d="M 50,50 L 50,5 A 45,45 0 0 1 95,50 Z" fill="#3A4128" />
-                      <text x="72" y="31" text-anchor="middle" class="fill-[#F9F9F7] text-[4.5px] font-medium uppercase tracking-tight">Canaux</text>
-                      <text x="72" y="36" text-anchor="middle" class="fill-[#F9F9F7] text-[3.5px] opacity-80 italic">sélectifs</text>
-                      <text x="72" y="42" text-anchor="middle" class="fill-[#F9F9F7] text-[5px] font-bold">25%</text>
-
-                      <!-- Séries courtes (20%) - #8B9474 (Muted Green) -->
-                      <path d="M 50,50 L 95,50 A 45,45 0 0 1 63.9,92.8 Z" fill="#8B9474" />
-                      <text x="78" y="67" text-anchor="middle" class="fill-[#1F1F1F] text-[4.5px] font-medium uppercase tracking-tight">Séries</text>
-                      <text x="78" y="72" text-anchor="middle" class="fill-[#1F1F1F] text-[3.5px] opacity-80 italic">courtes</text>
-                      <text x="78" y="78" text-anchor="middle" class="fill-[#1F1F1F] text-[5px] font-bold">20%</text>
-
-                      <!-- CAPEX maîtrisé (20%) - #D6CFC7 (Warm Sand) -->
-                      <path d="M 50,50 L 63.9,92.8 A 45,45 0 0 1 23.5,86.4 Z" fill="#D6CFC7" />
-                      <text x="45" y="81" text-anchor="middle" class="fill-[#1F1F1F] text-[4.5px] font-medium uppercase tracking-tight">CAPEX</text>
-                      <text x="45" y="86" text-anchor="middle" class="fill-[#1F1F1F] text-[3.5px] opacity-80 italic">maîtrisé</text>
-                      <text x="45" y="92" text-anchor="middle" class="fill-[#1F1F1F] text-[5px] font-bold">20%</text>
-
-                      <!-- Offre sécurisée (20%) - #C5A059 (Soft Gold) -->
-                      <path d="M 50,50 L 23.5,86.4 A 45,45 0 0 1 7.2,36 Z" fill="#C5A059" />
-                      <text x="22" y="61" text-anchor="middle" class="fill-[#1F1F1F] text-[4.5px] font-medium uppercase tracking-tight">Offre</text>
-                      <text x="22" y="66" text-anchor="middle" class="fill-[#1F1F1F] text-[3.5px] opacity-80 italic">sécurisée</text>
-                      <text x="22" y="72" text-anchor="middle" class="fill-[#1F1F1F] text-[5px] font-bold">20%</text>
-
-                      <!-- Montée progressive (15%) - #A3A380 (Sage) -->
-                      <path d="M 50,50 L 7.2,36 A 45,45 0 0 1 50,5 Z" fill="#A3A380" />
-                      <text x="28" y="24" text-anchor="middle" class="fill-[#1F1F1F] text-[4.5px] font-medium uppercase tracking-tight">Montée</text>
-                      <text x="28" y="29" text-anchor="middle" class="fill-[#1F1F1F] text-[3.5px] opacity-80 italic">progressive</text>
-                      <text x="28" y="35" text-anchor="middle" class="fill-[#1F1F1F] text-[5px] font-bold">15%</text>
-                    </svg>
-                  </div>
-
-                  <!-- Bloc Texte Éditorial -->
-                  <div class="lg:w-1/3 space-y-6 border-t lg:border-t-0 lg:border-l border-black/10 pt-10 lg:pt-0 lg:pl-16 text-center lg:text-left">
-                    <h4 class="font-serif italic text-2xl text-brand-olive">Une architecture pensée pour durer.</h4>
-                    <p class="text-base font-light text-black/60 leading-relaxed">
-                      Sélection exigeante, volumes ajustés, déploiement progressif.<br class="hidden lg:block">
-                      Un modèle conçu pour créer de la valeur, sans course au volume.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Footer Stratégique du Bloc -->
-                <div class="mt-12 pt-8 border-t border-black/5 text-center">
-                  <p class="text-base font-light italic text-black/80">
-                    👉 Notre priorité : cohérence de marque, qualité d’expérience et rentabilité maîtrisée.
-                  </p>
-                </div>
+              <div class="space-y-6 text-xl font-light text-black/60 leading-relaxed max-w-lg">
+                <p>
+                  Notre rôle est celui d’une marque curatrice. Nous sélectionnons des huiles issues de terroirs d’exception, produites avec rigueur et respect du fruit.
+                </p>
+                <p>
+                  Libérés des contraintes de volume, nous ne retenons que l’excellence : des huiles singulières révélées dans un écrin sobre et exigeant.
+                </p>
+                <p>
+                  Nous créons un pont entre les savoir-faire des terroirs algériens et les codes du monde premium contemporain.
+                </p>
               </div>
             </div>
 
@@ -219,50 +227,49 @@
         </div>
       </section>
 
-      <!-- Section Modèle Économique -->
-      <section class="py-8 md:py-12 bg-black text-white">
-        <div class="container mx-auto px-8 md:px-20 w-full">
-          <div class="max-w-5xl mx-auto space-y-6">
-            <div class="text-center space-y-2">
-              <span class="text-[#D4AF37] uppercase tracking-[0.5em] text-[12px] font-semibold">Stratégie & Vision</span>
-              <h2 class="text-3xl md:text-5xl font-serif font-light leading-tight">
-                Modèle économique — <br class="hidden md:block">
-                <i class="italic text-brand-gold text-2xl md:text-3xl">rentabilité maîtrisée, montée en charge</i>
+      <!-- Section Notre Vision - Bandeau Pleine Largeur -->
+      <section class="relative h-[80vh] w-full overflow-hidden flex items-center justify-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+          <img 
+            src="/notre-vision-bg.png" 
+            alt="Notre Vision - Terroirs d'Algérie" 
+            class="w-full h-full object-cover"
+          />
+          <!-- Dark Overlay -->
+          <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="container mx-auto px-8 md:px-20 relative z-10 text-center text-white">
+          <div class="max-w-4xl mx-auto space-y-8">
+            <div class="space-y-4">
+              <h2 class="text-4xl md:text-6xl font-serif font-light leading-tight">
+                Révéler l’excellence des <br class="hidden md:block"> huiles d’Algérie
               </h2>
             </div>
+            
+            <p class="text-xl md:text-2xl font-light text-white/90 max-w-2xl mx-auto leading-relaxed">
+              À travers chaque sélection, nous souhaitons révéler la richesse des terroirs algériens et offrir une huile fidèle à son origine.
+            </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start border-t border-white/10 pt-8">
-              <div class="space-y-4 text-center md:text-left">
-                <p class="text-base md:text-lg font-light text-white/90 leading-relaxed">
-                  Vente de coffrets premium en séries courtes, positionnés sur le segment du cadeau et de l’épicerie fine à panier élevé.
-                </p>
-                <p class="text-base md:text-lg font-light text-brand-gold leading-relaxed italic">
-                  Le prix intègre l’ensemble de la chaîne de valeur : sélection des huiles, packaging, logistique, fiscalité et distribution.
-                </p>
-              </div>
-
-              <div class="space-y-3 md:pt-1">
-                <div class="pt-0">
-                  <h3 class="text-brand-gold font-serif italic text-xl mb-1 md:whitespace-nowrap text-center md:text-left">Coûts maîtrisés :</h3>
-                  <ul class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-1 text-white/90 text-base font-light">
-                    <li>— pas d’outil agricole (pas de production en propre)</li>
-                    <li>— volumes limités et ajustés à la demande</li>
-                    <li>— rotation pilotée par les ventes réelles</li>
-                  </ul>
-                </div>
-                <div class="bg-white/5 p-6 border border-white/10 rounded-sm text-center">
-                  <p class="text-base md:text-lg font-light italic text-white/90 leading-relaxed">
-                    👉 Logique cash saine, image premium crédible, montée en puissance progressive validée par le marché.
-                  </p>
-                </div>
-              </div>
+            <div class="pt-8 flex flex-wrap justify-center gap-6">
+              <a href="/notre-vision.html" class="group relative inline-flex items-center justify-center overflow-hidden border border-white/30 w-64 py-4 text-[11px] tracking-[0.3em] uppercase transition-all duration-700 hover:border-white bg-zinc-200 text-black">
+                <span class="relative z-10">Découvrir la collection</span>
+                <div class="absolute inset-0 bg-black scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700 ease-in-out opacity-5"></div>
+              </a>
+              
+              <a href="/contact.html" class="group relative inline-flex items-center justify-center overflow-hidden border border-white/40 w-64 py-4 text-[11px] tracking-[0.3em] uppercase transition-all duration-700 hover:border-white bg-zinc-800 text-white">
+                <span class="relative z-10">Nous contacter</span>
+                <div class="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700 ease-in-out opacity-10"></div>
+              </a>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="py-24 border-t border-black/5 mt-24">
+    <footer class="py-24 border-t border-black/5 mt-0">
       <div class="container mx-auto px-8 md:px-20">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-8">
           <div class="md:col-span-2 space-y-8">
@@ -275,10 +282,10 @@
           <div class="space-y-6">
             <h4 class="text-[10px] tracking-[0.3em] uppercase font-medium">Menu</h4>
             <ul class="space-y-4 text-sm font-light text-black/60">
-              <li><a href="/" class="hover:text-black transition-colors">Marché & Positionnement</a></li>
-              <li><a href="/notre-vision.html" class="hover:text-black transition-colors">Notre vision</a></li>
-              <li><a href="#" class="hover:text-black transition-colors">La Collection</a></li>
-              <li><a href="/edition-limitee.html" class="hover:text-black transition-colors">Édition limitée</a></li>
+              <li><a href="/" class="hover:text-black transition-colors">NOTRE MAISON</a></li>
+              <li><a href="/notre-vision.html" class="hover:text-black transition-colors">La Collection</a></li>
+              <li><a href="/la-collection.html" class="hover:text-black transition-colors">À propos de nous</a></li>
+              <li><a href="/contact.html" class="hover:text-black transition-colors">Nous contacter</a></li>
             </ul>
           </div>
         </div>
