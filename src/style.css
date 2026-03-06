@@ -209,6 +209,7 @@ header.scrolled:not(.menu-open) .menu-wrapper {
 
 header.scrolled:not(.menu-open) .logo-container {
   margin-bottom: 0;
+  color: #0a0a0a;
 }
 
 header.menu-open {
@@ -227,6 +228,12 @@ header.menu-open .menu-wrapper {
 
 header.menu-open .logo-container {
   margin-bottom: 1.5rem;
+  color: #0a0a0a;
+}
+
+/* Navigation - police noir profond */
+#main-header nav a {
+  color: #0a0a0a;
 }
 
 /* Affichage du menu sur mobile quand ouvert */
@@ -240,6 +247,8 @@ header.menu-open nav {
 
 header.menu-open nav a {
   padding: 0.5rem 0;
+  color: #0a0a0a;
+  font-weight: 500;
 }
 
 /* Lightbox - Image agrandie 100% au clic */
