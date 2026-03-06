@@ -12,6 +12,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         edition: resolve(__dirname, 'edition-limitee.html'),
         vision: resolve(__dirname, 'notre-vision.html'),
+        collection: resolve(__dirname, 'la-collection.html'),
+        contact: resolve(__dirname, 'contact.html'),
       },
     },
   },
