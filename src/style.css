@@ -1,22 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-beige: #F5F5F3;
+  --color-brand-beige: #F9F7F2;
   --color-brand-olive: #2D3318;
   --color-brand-gold: #D4AF37;
 }
 
 @layer base {
+  * {
+    text-shadow: none !important;
+  }
+  
   body {
     background-color: var(--color-brand-beige);
     color: #1A1A1A;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Lora', serif;
     -webkit-font-smoothing: antialiased;
   }
   
   h1, h2, h3, .font-serif {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
   }
+
+  #main-header {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+.block-collection {
+  height: auto;
+  max-height: 580px;
+  padding: 160px 0 96px;
 }
 
 @keyframes ken-burns {
@@ -51,6 +65,18 @@
   transform-origin: center center;
 }
 
+@keyframes slow-zoom-150 {
+  0% { transform: scale(1.5); }
+  20% { transform: scale(2); }
+  50% { transform: scale(1.5); }
+  70% { transform: scale(2); }
+  100% { transform: scale(1.5); }
+}
+.animate-slow-zoom-150 {
+  animation: slow-zoom-150 12s ease-in-out infinite;
+  transform-origin: center center;
+}
+
 .delay-2000 { animation-delay: 2s; }
 .delay-4000 { animation-delay: 4s; }
 
@@ -75,7 +101,7 @@
   height: 65vw;
   max-width: 640px;
   max-height: 640px;
-  background: radial-gradient(circle, #8b8132 0%, #2D3318 100%);
+  background: radial-gradient(circle, #C4A463 0%, #1e2610 100%);
   top: 5%;
   left: -20%;
   animation-direction: normal;
@@ -85,12 +111,68 @@
   height: 55vw;
   max-width: 540px;
   max-height: 540px;
-  background: radial-gradient(circle, #5E8B4E 0%, #1F3D2B 100%);
+  background: radial-gradient(circle, #C4A463 0%, #1e2610 100%);
   bottom: 0;
   right: -15%;
   animation-delay: -7s;
   animation-direction: reverse;
   opacity: 0.45;
+}
+
+/* Section marché - blobs commencent au milieu, vont vers les bords, reviennent au milieu */
+/* Animation 8s : touche à 47%, pause 0.5s (47%→53%), puis repart */
+@keyframes marche-blob-float {
+  0%, 100% {
+    transform: translate(45%, -15%) scale(1.08);
+  }
+  47%, 53% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+@keyframes marche-blob-float-2 {
+  0%, 100% {
+    transform: translate(-45%, -15%) scale(1.08);
+  }
+  47%, 53% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+#marche-investissement.section-marche-blobs .hero-blob,
+#developpement.section-marche-blobs .hero-blob {
+  opacity: 0.72;
+  filter: blur(35px);
+  background: radial-gradient(circle, #C4A463 0%, #7a6539 100%);
+}
+#marche-investissement.section-marche-blobs .hero-blob-1,
+#developpement.section-marche-blobs .hero-blob-1 {
+  opacity: 0.75;
+  animation: marche-blob-float 8s ease-in-out infinite;
+}
+#marche-investissement.section-marche-blobs .hero-blob-2,
+#developpement.section-marche-blobs .hero-blob-2 {
+  opacity: 0.7;
+  animation: marche-blob-float-2 8s ease-in-out infinite;
+}
+/* Section Développement : blobs inversés, démarrage au centre */
+#developpement.section-marche-blobs .hero-blob {
+  animation-direction: reverse;
+  animation-delay: -3.76s; /* 47% de 8s = démarrage au centre (translate 0,0) */
+}
+
+/* Blobs plus clairs - page À propos de nous */
+#marche-investissement.marche-blobs-clair .hero-blob {
+  opacity: 0.85;
+  filter: blur(40px);
+}
+#marche-investissement.marche-blobs-clair .hero-blob-1 {
+  background: radial-gradient(circle, #b8aa6a 0%, #6a7b50 100%);
+  top: 15%;
+  left: -5%;
+}
+#marche-investissement.marche-blobs-clair .hero-blob-2 {
+  background: radial-gradient(circle, #9bd48a 0%, #6a8b6a 100%);
+  bottom: 15%;
+  right: -5%;
 }
 /* Section Développement - Animation vert lumineux */
 .dev-blob {
@@ -105,7 +187,7 @@
   height: 50vw;
   max-width: 500px;
   max-height: 500px;
-  background: radial-gradient(circle, #6b9b37 0%, #4a7c23 100%);
+  background: radial-gradient(circle, #4a7c23 0%, #2d5a18 100%);
   top: -10%;
   left: -15%;
 }
@@ -114,11 +196,16 @@
   height: 45vw;
   max-width: 450px;
   max-height: 450px;
-  background: radial-gradient(circle, #5e8b3a 0%, #3d6b2a 100%);
+  background: radial-gradient(circle, #3d6b2a 0%, #234a14 100%);
   bottom: -15%;
   right: -10%;
   animation-delay: -12s;
   animation-direction: reverse;
+}
+/* Section développement sur fond doré : pas de vert */
+#developpement .dev-blob-1,
+#developpement .dev-blob-2 {
+  background: radial-gradient(circle, rgba(196, 164, 99, 0.25) 0%, rgba(196, 164, 99, 0.05) 100%);
 }
 /* Cascade de filets d'huile - côté gauche sections opportunité et développement */
 .oil-drip {
@@ -126,13 +213,13 @@
   width: 5px;
   height: 120px;
   background: linear-gradient(to bottom,
-    rgba(139, 129, 50, 0.1) 0%,
-    rgba(139, 129, 50, 0.4) 25%,
-    rgba(139, 129, 50, 0.7) 50%,
-    rgba(139, 129, 50, 0.8) 75%,
-    rgba(139, 129, 50, 0.5) 100%
+    rgba(212, 175, 55, 0.15) 0%,
+    rgba(212, 175, 55, 0.5) 25%,
+    rgba(212, 175, 55, 0.8) 50%,
+    rgba(212, 175, 55, 0.9) 75%,
+    rgba(212, 175, 55, 0.6) 100%
   );
-  box-shadow: 0 0 6px rgba(139, 129, 50, 0.4);
+  box-shadow: 0 0 6px rgba(212, 175, 55, 0.5);
   border-radius: 0 0 3px 3px;
   animation: oil-drip-fall 7s ease-in infinite;
   transform-origin: top center;
@@ -150,6 +237,24 @@
 @keyframes oil-drip-fall {
   0% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(800px); opacity: 0.85; }
+}
+/* Gouttes du haut du hero jusqu'au dernier bloc (page La Collection) */
+.oil-cascade-fullpage .oil-drip {
+  animation: oil-drip-fall-fullpage 12s ease-in infinite;
+}
+.oil-cascade-fullpage .oil-drip-1 { animation-delay: 0s; }
+.oil-cascade-fullpage .oil-drip-2 { animation-delay: -1.5s; animation-duration: 14s; }
+.oil-cascade-fullpage .oil-drip-3 { animation-delay: -3s; animation-duration: 11s; }
+.oil-cascade-fullpage .oil-drip-4 { animation-delay: -0.5s; animation-duration: 15s; }
+.oil-cascade-fullpage .oil-drip-5 { animation-delay: -2.5s; animation-duration: 13s; }
+.oil-cascade-fullpage .oil-drip-6 { animation-delay: -4s; animation-duration: 12s; }
+.oil-cascade-fullpage .oil-drip-7 { animation-delay: -2s; animation-duration: 16s; }
+.oil-cascade-fullpage .oil-drip-8 { animation-delay: -5s; animation-duration: 10s; }
+.oil-cascade-fullpage .oil-drip-9 { animation-delay: -1s; animation-duration: 14s; }
+.oil-cascade-fullpage .oil-drip-10 { animation-delay: -3.5s; animation-duration: 11s; }
+@keyframes oil-drip-fall-fullpage {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(400vh); opacity: 0.6; }
 }
 
 @keyframes dev-blob-float {
@@ -193,9 +298,9 @@ header:not(.no-transition) .menu-wrapper {
 }
 
 header.scrolled {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-  background-color: #FFFFFF; /* Éclairci au maximum (Blanc) */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #F9F7F2; /* Ivoire Pur */
   backdrop-filter: none;
   mix-blend-mode: normal; 
   z-index: 9999; /* Z-index élevé */
@@ -212,11 +317,19 @@ header.scrolled:not(.menu-open) .logo-container {
   color: #0a0a0a;
 }
 
+/* Page contact : header, texte Terre Brûlée */
+body.page-contact header .logo-container,
+body.page-contact header nav a {
+  color: #4E3B31;
+  font-weight: 700;
+}
+
+
 header.menu-open {
-  background-color: #F9F9F7;
+  background-color: #F9F7F2 !important;
   mix-blend-mode: normal;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 header.menu-open .menu-wrapper {
@@ -232,8 +345,17 @@ header.menu-open .logo-container {
 }
 
 /* Navigation - police noir profond */
+/* Logo : le blanc du logo se fond avec le fond Ivoire Pur du header */
+.header-logo-img-wrap {
+  background-color: #F9F7F2;
+}
+#main-header .header-logo-img {
+  mix-blend-mode: multiply;
+}
+
 #main-header nav a {
-  color: #0a0a0a;
+  color: #000000;
+  font-weight: 700;
 }
 
 /* Affichage du menu sur mobile quand ouvert */
@@ -247,8 +369,8 @@ header.menu-open nav {
 
 header.menu-open nav a {
   padding: 0.5rem 0;
-  color: #0a0a0a;
-  font-weight: 500;
+  color: #000000;
+  font-weight: 700;
 }
 
 /* Lightbox - Image agrandie 100% au clic */
@@ -291,5 +413,41 @@ header.menu-open nav a {
   transform: scale(2);
   transform-origin: center center;
   pointer-events: none;
+}
+
+/* Blocs image uniformes - olives, vidéo, sceau */
+.image-block img,
+.image-block video {
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-dot.active {
+  background-color: #C4A463;
+  width: 2rem;
+}
+
+@media (min-width: 768px) {
+  .section-row {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+.section-text {
+  margin-left: 0;
 }
 

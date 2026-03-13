@@ -123,3 +123,45 @@ const counterObserver = new IntersectionObserver(
 );
 
 if (chartSection) counterObserver.observe(chartSection);
+
+// Carousel Logic
+const carousel = document.getElementById('black-sections-carousel');
+const prevBtn = document.getElementById('carousel-prev');
+const nextBtn = document.getElementById('carousel-next');
+const dots = document.querySelectorAll('.carousel-dot');
+
+// Défilement vertical : priorité à la page quand l’utilisateur scroll vers le bas/haut sur le carousel
+if (carousel) {
+  carousel.addEventListener('wheel', (e) => {
+    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+      window.scrollBy({ top: e.deltaY, behavior: 'auto' });
+      e.preventDefault();
+    }
+  }, { passive: false });
+}
+
+if (carousel && prevBtn && nextBtn) {
+  const updateDots = () => {
+    const index = Math.round(carousel.scrollLeft / carousel.offsetWidth);
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+  };
+
+  nextBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -carousel.offsetWidth, behavior: 'smooth' });
+  });
+
+  carousel.addEventListener('scroll', updateDots);
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      carousel.scrollTo({ left: i * carousel.offsetWidth, behavior: 'smooth' });
+    });
+  });
+}
+

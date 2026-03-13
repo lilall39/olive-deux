@@ -7,75 +7,81 @@
     <title>Nous contacter | Huiles d'Olives d'Algérie</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
   </head>
-  <body class="bg-white text-black overflow-x-hidden">
+  <body class="bg-[#C4A463] text-[#4E3B31] overflow-x-hidden page-contact min-h-screen">
     
     <!-- Navigation minimale -->
-    <header id="main-header" class="fixed top-0 left-0 w-full z-50 py-10 px-6 md:px-20 flex flex-col items-center bg-white no-transition">
-      <div id="header-logo" class="logo-container text-base md:text-2xl font-serif tracking-[0.2em] uppercase mb-6 cursor-pointer text-center">NAFEE — Maison d'Huiles d'Olive</div>
-      
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 pt-6 pb-3 px-6 md:px-20 flex flex-col items-center bg-[#F9F7F2] no-transition">
+      <div class="w-full grid grid-cols-[1fr_auto_1fr] items-center gap-4 mb-2">
+        <div></div>
+        <div id="header-logo" class="logo-container text-base md:text-2xl font-serif tracking-[0.2em] uppercase cursor-pointer text-center">NAFEES — Maison d'Huiles d'Olive</div>
+        <div class="flex items-center justify-end header-logo-img-wrap">
+          <img src="/logo-nafees.png" alt="NAFEES" class="h-[80px] w-auto object-contain header-logo-img" />
+        </div>
+      </div>
       <div class="menu-wrapper flex flex-col items-center space-y-4">
-        <nav class="hidden md:flex space-x-16 text-[10px] tracking-[0.4em] uppercase font-light">
+        <nav class="hidden md:flex items-center space-x-16 text-[10px] tracking-[0.4em] uppercase font-light">
           <a href="/" class="hover:opacity-50 transition-opacity">NOTRE MAISON</a>
           <a href="/notre-vision.html" class="hover:opacity-50 transition-opacity">LA COLLECTION</a>
           <a href="/la-collection.html" class="hover:opacity-50 transition-opacity">À PROPOS DE NOUS</a>
-          <a href="/contact.html" class="hover:opacity-50 transition-opacity border-b border-black/20 pb-1">NOUS CONTACTER</a>
+          <a href="/contact.html" class="hover:opacity-50 transition-opacity border-b border-[#4E3B31]/30 pb-1">NOUS CONTACTER</a>
+          <a href="/admin" class="hover:opacity-50 transition-opacity font-medium border-l border-[#4E3B31]/30 pl-4">ADMIN</a>
         </nav>
       </div>
     </header>
 
-    <main class="pt-44 md:pt-60 pb-24">
+    <main class="pt-36 md:pt-60 pb-12 md:pb-24">
       <section class="container mx-auto px-8 md:px-20">
         <div class="max-w-[600px] mx-auto">
-          <div class="text-center mb-20">
-            <h1 class="text-4xl md:text-5xl font-serif font-light leading-tight text-black mb-6">
+          <div class="text-center mb-12 md:mb-20 text-[#4E3B31]">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold leading-tight mb-6">
               Entrer en contact
             </h1>
-            <p class="text-lg md:text-xl font-light text-black/70 leading-relaxed">
+            <p class="text-lg md:text-xl font-bold text-[#4E3B31] leading-relaxed">
               Pour toute demande concernant la collection, les partenariats ou le projet, vous pouvez nous écrire via ce formulaire.
             </p>
           </div>
 
-          <form class="space-y-10" action="#" method="post">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div class="space-y-3">
-                <label for="nom" class="block text-[10px] tracking-[0.3em] uppercase text-black/60 font-light">Nom</label>
+          <form class="space-y-6 md:space-y-10" action="#" method="post">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+              <div class="space-y-2 md:space-y-3">
+                <label for="nom" class="block text-[12px] tracking-[0.3em] uppercase text-[#4E3B31] font-bold">Nom</label>
                 <input type="text" id="nom" name="nom" required
-                  class="w-full py-4 px-0 bg-transparent border-b border-black/20 text-black placeholder-black/30 focus:outline-none focus:border-black transition-colors"
+                  class="w-full py-4 px-0 bg-transparent border-b border-[#4E3B31] text-[#4E3B31] text-[18px] font-bold placeholder-[#4E3B31] focus:outline-none focus:border-[#4E3B31] transition-colors"
                   placeholder="Votre nom"
                 />
               </div>
-              <div class="space-y-3">
-                <label for="prenom" class="block text-[10px] tracking-[0.3em] uppercase text-black/60 font-light">Prénom</label>
+              <div class="space-y-2 md:space-y-3">
+                <label for="prenom" class="block text-[12px] tracking-[0.3em] uppercase text-[#4E3B31] font-bold">Prénom</label>
                 <input type="text" id="prenom" name="prenom" required
-                  class="w-full py-4 px-0 bg-transparent border-b border-black/20 text-black placeholder-black/30 focus:outline-none focus:border-black transition-colors"
+                  class="w-full py-4 px-0 bg-transparent border-b border-[#4E3B31] text-[#4E3B31] text-[18px] font-bold placeholder-[#4E3B31] focus:outline-none focus:border-[#4E3B31] transition-colors"
                   placeholder="Votre prénom"
                 />
               </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div class="space-y-3">
-                <label for="email" class="block text-[10px] tracking-[0.3em] uppercase text-black/60 font-light">Email</label>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+              <div class="space-y-2 md:space-y-3">
+                <label for="email" class="block text-[12px] tracking-[0.3em] uppercase text-[#4E3B31] font-bold">Email</label>
                 <input type="email" id="email" name="email" required
-                  class="w-full py-4 px-0 bg-transparent border-b border-black/20 text-black placeholder-black/30 focus:outline-none focus:border-black transition-colors"
+                  class="w-full py-4 px-0 bg-transparent border-b border-[#4E3B31] text-[#4E3B31] text-[18px] font-bold placeholder-[#4E3B31] focus:outline-none focus:border-[#4E3B31] transition-colors"
                   placeholder="votre@email.com"
                 />
               </div>
-              <div class="space-y-3">
-                <label for="societe" class="block text-[10px] tracking-[0.3em] uppercase text-black/60 font-light">Société / Organisation</label>
+              <div class="space-y-2 md:space-y-3">
+                <label for="societe" class="block text-[12px] tracking-[0.3em] uppercase text-[#4E3B31] font-bold">Société / Organisation</label>
                 <input type="text" id="societe" name="societe"
-                  class="w-full py-4 px-0 bg-transparent border-b border-black/20 text-black placeholder-black/30 focus:outline-none focus:border-black transition-colors"
+                  class="w-full py-4 px-0 bg-transparent border-b border-[#4E3B31] text-[#4E3B31] text-[18px] font-bold placeholder-[#4E3B31] focus:outline-none focus:border-[#4E3B31] transition-colors"
                   placeholder="Optionnel"
                 />
               </div>
             </div>
-            <div class="space-y-3">
-              <label for="sujet" class="block text-[10px] tracking-[0.3em] uppercase text-black/60 font-light">Sujet</label>
+            <div class="space-y-2 md:space-y-3">
+              <label for="sujet" class="block text-[12px] tracking-[0.3em] uppercase text-[#4E3B31] font-bold">Sujet</label>
               <select id="sujet" name="sujet" required
-                class="w-full py-4 pr-8 bg-transparent border-b border-black/20 text-black focus:outline-none focus:border-black transition-colors appearance-none cursor-pointer bg-[length:1rem] bg-right bg-no-repeat"
-                style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 24 24%22 stroke=%22%231a1a1a%22 stroke-opacity=%22.5%22%3E%3Cpath stroke-linecap=%22round%22 stroke-linejoin=%22round%22 stroke-width=%222%22 d=%22M19 9l-7 7-7-7%22/%3E%3C/svg%3E')">
+                class="w-full py-4 pr-8 bg-transparent border-b border-[#4E3B31] text-[#4E3B31] text-[18px] font-bold focus:outline-none focus:border-[#4E3B31] transition-colors appearance-none cursor-pointer bg-[length:1rem] bg-right bg-no-repeat"
+                style="background-image:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 24 24%22 stroke=%22%234E3B31%22 stroke-opacity=%22.8%22%3E%3Cpath stroke-linecap=%22round%22 stroke-linejoin=%22round%22 stroke-width=%222%22 d=%22M19 9l-7 7-7-7%22/%3E%3C/svg%3E')">
                 <option value="" disabled selected>Sélectionnez un sujet</option>
                 <option value="information">Demande d'information</option>
                 <option value="partenariat">Partenariat</option>
@@ -84,28 +90,28 @@
                 <option value="autre">Autre</option>
               </select>
             </div>
-            <div class="space-y-3">
-              <label for="message" class="block text-[10px] tracking-[0.3em] uppercase text-black/60 font-light">Message</label>
-              <textarea id="message" name="message" rows="8" required
-                class="w-full py-4 px-0 bg-transparent border-b border-black/20 text-black placeholder-black/30 focus:outline-none focus:border-black transition-colors resize-none"
+            <div class="space-y-2 md:space-y-3">
+              <label for="message" class="block text-[12px] tracking-[0.3em] uppercase text-[#4E3B31] font-bold">Message</label>
+              <textarea id="message" name="message" rows="6" required
+                class="w-full py-4 px-0 bg-transparent border-b border-[#4E3B31] text-[#4E3B31] text-[18px] font-bold placeholder-[#4E3B31] focus:outline-none focus:border-[#4E3B31] transition-colors resize-none"
                 placeholder="Votre message..."
               ></textarea>
             </div>
-            <div class="pt-6">
+            <div class="pt-4 md:pt-6">
               <button type="submit"
-                class="group relative inline-flex items-center justify-center overflow-hidden border border-black/20 w-full md:w-72 py-4 text-[11px] tracking-[0.3em] uppercase transition-all duration-700 hover:border-black bg-black text-white">
+                class="group relative inline-flex items-center justify-center overflow-hidden border border-[#4E3B31]/50 w-full md:w-72 py-4 text-[13px] tracking-[0.3em] uppercase font-bold transition-all duration-700 hover:border-[#4E3B31] bg-transparent text-[#4E3B31]">
                 <span class="relative z-10">Envoyer le message</span>
                 <div class="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700 ease-in-out opacity-10"></div>
               </button>
             </div>
           </form>
 
-          <p class="mt-12 text-sm font-bold italic text-black leading-relaxed text-center max-w-md mx-auto">
+          <p class="mt-12 text-sm font-bold italic text-[#4E3B31] leading-relaxed text-center max-w-md mx-auto">
             Les demandes concernant le projet ou les opportunités d'investissement sont traitées de manière confidentielle.
           </p>
 
           <div class="mt-10 text-center">
-            <a href="mailto:contact@nafee.com" class="text-sm font-light text-black/70 hover:text-black transition-colors underline underline-offset-4">
+            <a href="mailto:contact@nafee.com" class="text-sm font-bold text-[#4E3B31] hover:opacity-80 transition-colors underline underline-offset-4">
               contact@nafee.com
             </a>
           </div>
@@ -113,30 +119,32 @@
       </section>
     </main>
 
-    <footer class="py-24 border-t border-black/5 mt-0">
+    <footer class="py-4 md:py-24 border-t border-black/5 mt-0">
       <div class="container mx-auto px-8 md:px-20">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-8">
-          <div class="md:col-span-2 space-y-8">
-            <div class="text-xl font-serif tracking-[0.2em] uppercase">Huiles d'Olives d'Algérie</div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-8">
+          <div class="md:col-span-2 space-y-4 md:space-y-8">
+            <div class="text-xl font-serif tracking-[0.2em] uppercase text-black">Huiles d'Olives d'Algérie</div>
             <p class="text-sm font-light text-black/50 max-w-xs leading-relaxed">
               L'excellence de l'huile d'olive d'Algérie, de l'arbre à votre table. Engagement durable et qualité absolue.
             </p>
           </div>
           
-          <div class="space-y-6">
-            <h4 class="text-[10px] tracking-[0.3em] uppercase font-medium">Menu</h4>
+          <div class="space-y-4 md:space-y-6">
+            <h4 class="text-[10px] tracking-[0.3em] uppercase font-medium text-black">Menu</h4>
             <ul class="space-y-4 text-sm font-light text-black/60">
               <li><a href="/" class="hover:text-black transition-colors">NOTRE MAISON</a></li>
               <li><a href="/notre-vision.html" class="hover:text-black transition-colors">La Collection</a></li>
               <li><a href="/la-collection.html" class="hover:text-black transition-colors">À propos de nous</a></li>
               <li><a href="/contact.html" class="hover:text-black transition-colors">Nous contacter</a></li>
+              <li><a href="/admin" class="hover:text-black transition-colors font-medium">Admin</a></li>
             </ul>
           </div>
         </div>
         
-        <div class="mt-24 pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="mt-12 pt-4 md:mt-24 md:pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-8">
           <p class="text-[10px] tracking-[0.2em] uppercase text-black/30">© 2026 Huiles d'Olives d'Algérie. Tous droits réservés.</p>
-          <div class="flex space-x-8">
+          <div class="flex items-center gap-8">
+             <a href="/admin" class="text-[10px] tracking-[0.2em] uppercase text-black font-medium hover:opacity-70">Admin</a>
              <a href="#" class="text-[10px] tracking-[0.2em] uppercase text-black/30 hover:text-black transition-colors">Instagram</a>
              <a href="#" class="text-[10px] tracking-[0.2em] uppercase text-black/30 hover:text-black transition-colors">LinkedIn</a>
           </div>

@@ -6,6 +6,18 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  server: {
+    port: 5173,
+    proxy: {
+      '/admin': { target: 'http://localhost:3333', changeOrigin: true },
+      '/admin/': { target: 'http://localhost:3333', changeOrigin: true },
+      '/api': { target: 'http://localhost:3333', changeOrigin: true },
+      '/api/': { target: 'http://localhost:3333', changeOrigin: true },
+      '/studio': { target: 'http://localhost:3333', changeOrigin: true },
+      '/studio/': { target: 'http://localhost:3333', changeOrigin: true },
+      '/_next': { target: 'http://localhost:3333', changeOrigin: true },
+    },
+  },
   build: {
     rollupOptions: {
       input: {
