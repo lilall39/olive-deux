@@ -32,8 +32,8 @@
       </div>
     </header>
 
-    <main>
-      <section class="block-collection relative w-full overflow-hidden flex items-start justify-center min-h-[85vh] md:min-h-[100vh] bg-[#1A2416]">
+    <main class="bg-[#1A2416]">
+      <section class="block-collection relative w-full overflow-hidden flex items-start justify-center min-h-[58vh] md:min-h-[100vh] bg-[#1A2416]">
         <!-- Background New Image -->
         <div class="absolute inset-0 z-0 bg-[#F9F7F2]">
           <img 
@@ -59,9 +59,9 @@
           </svg>
         </div>
 
-        <!-- Content -->
-        <div class="container mx-auto px-8 md:px-20 relative z-10 text-center text-[#1A2416] pt-14 md:pt-18 pb-16 md:pb-24">
-          <div class="max-w-4xl mx-auto flex flex-col items-center justify-center animate-fade-up -mt-6">
+        <!-- Content : sur mobile padding-top pour dégager du bord haut -->
+        <div class="container mx-auto px-8 md:px-20 relative z-10 text-center text-[#1A2416] pt-32 md:pt-18 pb-16 md:pb-24">
+          <div class="max-w-4xl mx-auto flex flex-col items-center justify-center animate-fade-up -mt-0 md:-mt-6">
             <div class="space-y-4">
               <h1 class="text-[26px] md:text-[44px] font-serif font-light leading-tight text-[#1A2416] mt-6 md:mt-6">
                 La Collection
@@ -101,7 +101,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 mt-20 md:mt-24">
           <!-- Bloc 1 -->
           <div class="flex flex-col items-center">
-            <div class="w-full max-w-[420px] max-h-[468px] aspect-[3/4] bg-black/5 overflow-hidden shadow-2xl lightbox-trigger cursor-pointer">
+            <div class="w-full max-w-[420px] max-h-[280px] md:max-h-[468px] aspect-[3/4] bg-black/5 overflow-hidden shadow-2xl lightbox-trigger cursor-pointer">
               <img src="/coffret-collection.png" alt="Coffret de dégustation - La Collection" class="w-full h-full object-cover animate-slow-zoom">
             </div>
             <div class="text-center mt-8 max-w-[420px] w-full">
@@ -114,7 +114,7 @@
           </div>
           <!-- Bloc 2 -->
           <div class="flex flex-col items-center">
-            <div class="w-full max-w-[420px] max-h-[468px] aspect-[3/4] bg-black/5 overflow-hidden shadow-2xl lightbox-trigger cursor-pointer">
+            <div class="w-full max-w-[420px] max-h-[280px] md:max-h-[468px] aspect-[3/4] bg-black/5 overflow-hidden shadow-2xl lightbox-trigger cursor-pointer">
               <img src="/coffret-nafees.png" alt="Coffret Nafees - Collection Grands Crus" class="w-full h-full object-cover animate-slow-zoom">
             </div>
             <div class="text-center mt-8 max-w-[420px] w-full">
@@ -126,7 +126,7 @@
           </div>
           <!-- Bloc 3 -->
           <div class="flex flex-col items-center">
-            <div class="w-full max-w-[420px] max-h-[468px] aspect-[3/4] bg-black/5 overflow-hidden shadow-2xl lightbox-trigger cursor-pointer">
+            <div class="w-full max-w-[420px] max-h-[280px] md:max-h-[468px] aspect-[3/4] bg-black/5 overflow-hidden shadow-2xl lightbox-trigger cursor-pointer">
               <img src="/nafee-collection.png" alt="Collection NAFEE - Huiles d'olive premium" class="w-full h-full object-cover animate-slow-zoom">
             </div>
             <div class="text-center mt-8 max-w-[420px] w-full">
@@ -165,7 +165,7 @@
 
       <section id="le-terroir" class="-mt-[3rem] pt-6 pb-16 md:-mt-[3rem] md:pt-12 md:pb-16 bg-[#1A2416]">
         <div class="container mx-auto px-8 md:px-20">
-          <div class="grid grid-cols-1 gap-10 md:gap-10 items-center justify-items-end min-h-[520px] md:min-h-[620px] max-w-4xl mx-auto section-row">
+          <div class="grid grid-cols-1 gap-6 md:gap-10 items-center justify-items-end min-h-0 md:min-h-[620px] max-w-4xl mx-auto section-row">
             
             <!-- Colonne Gauche : Image -->
             <div class="order-2 md:order-1 h-full flex items-center justify-end w-full md:justify-end">
@@ -197,10 +197,10 @@
         </div>
       </section>
 
-      <!-- Section La Transmission -->
-      <section class="-mt-[7rem] pb-8 md:-mt-[7rem] md:pb-16 bg-[#1A2416]">
+      <!-- Section La Transmission : sur mobile moins de chevauchement et hauteur réduite -->
+      <section class="-mt-[2rem] md:-mt-[7rem] pb-6 md:pb-16 bg-[#1A2416]">
         <div class="container mx-auto px-8 md:px-20">
-          <div class="grid grid-cols-1 gap-10 md:gap-10 items-center justify-items-end min-h-[520px] md:min-h-[620px] max-w-4xl mx-auto section-row">
+          <div class="grid grid-cols-1 gap-4 md:gap-10 items-center justify-items-end min-h-0 md:min-h-[620px] max-w-4xl mx-auto section-row">
             
             <!-- Colonne Gauche : Vidéo -->
             <div class="order-1 md:order-1 h-full w-full flex items-center justify-end">
@@ -217,15 +217,15 @@
             </div>
 
             <!-- Colonne Droite : Texte -->
-            <div class="section-text space-y-8 order-2 md:order-2 flex flex-col justify-center">
-              <div class="space-y-6 relative">
+            <div class="section-text space-y-4 md:space-y-8 order-2 md:order-2 flex flex-col justify-center">
+              <div class="space-y-3 md:space-y-6 relative">
                 <div class="absolute top-1/2 left-0 -translate-y-1/2 w-3/4 h-3/4 bg-[#C4A463]/40 blur-[100px] rounded-full pointer-events-none"></div>
                 <span class="text-white uppercase tracking-[0.5em] text-[13px] font-bold block relative z-10">Une vision contemporaine</span>
                 <h2 class="text-[30px] font-serif font-light leading-tight relative z-10 text-white">
                   Une vision contemporaine de l'huile d'olive
                 </h2>
               </div>
-              <div class="space-y-6 text-xl font-light text-white leading-relaxed max-w-lg">
+              <div class="space-y-3 md:space-y-6 text-xl font-light text-white leading-relaxed max-w-lg">
                 <p>
                   L'huile d'olive porte une histoire millénaire. Nous avons choisi de lui offrir une expression contemporaine.
                 </p>
@@ -240,12 +240,12 @@
       </section>
 
       <!-- Section La Curation -->
-      <section class="-mt-[7rem] pb-16 md:-mt-[7rem] md:pb-8 bg-[#1A2416]">
+      <section class="mt-6 -mt-[2rem] pb-8 md:mt-0 md:-mt-[7rem] md:pb-8 bg-[#1A2416]">
         <div class="container mx-auto px-8 md:px-20">
-          <div class="grid grid-cols-1 gap-10 md:gap-10 items-center justify-items-end min-h-[520px] md:min-h-[620px] max-w-4xl mx-auto section-row">
+          <div class="grid grid-cols-1 gap-6 md:gap-10 items-center justify-items-end min-h-0 md:min-h-[620px] max-w-4xl mx-auto section-row">
             
-            <!-- Colonne Gauche : Image -->
-            <div class="h-full w-full flex items-center justify-end">
+            <!-- Colonne Gauche : Image (en 2e sur mobile, 1ère sur desktop) -->
+            <div class="order-2 md:order-1 h-full w-full flex items-center justify-end">
               <div class="image-block relative overflow-hidden">
                 <img 
                   src="/sceau-curation.png" 
@@ -255,12 +255,12 @@
               </div>
             </div>
 
-            <!-- Colonne Droite : Texte -->
-            <div class="section-text space-y-8 flex flex-col justify-center">
+            <!-- Colonne Droite : Texte (en 1er sur mobile, 2e sur desktop) -->
+            <div class="order-1 md:order-2 section-text space-y-8 flex flex-col justify-center">
               <div class="space-y-6 relative">
                 <div class="absolute top-1/2 left-0 -translate-y-1/2 w-3/4 h-3/4 bg-[#C4A463]/40 blur-[100px] rounded-full pointer-events-none"></div>
                 <span class="text-white uppercase tracking-[0.5em] text-[13px] font-bold block relative z-10">Sceau de Qualité</span>
-                <h2 class="text-[30px] font-serif font-light leading-tight relative z-10 text-white">
+                <h2 class="mt-4 md:mt-0 text-[30px] font-serif font-light leading-tight relative z-10 text-white">
                   La curation comme<br> sceau de qualité
                 </h2>
               </div>
@@ -279,7 +279,7 @@
       </section>
 
       <!-- Bandeau pleine largeur - après le carrousel -->
-      <section id="bloc-final" class="relative min-h-[50vh] md:min-h-[85vh] w-full overflow-y-auto md:overflow-hidden flex items-start justify-center pt-20 md:pt-32 pb-12">
+      <section id="bloc-final" class="relative min-h-0 md:min-h-[85vh] w-full overflow-y-auto md:overflow-hidden flex items-start justify-center pt-10 pb-8 md:pt-32 md:pb-12">
         <!-- Background Image -->
         <div class="absolute inset-0 z-0">
           <img 
@@ -293,7 +293,7 @@
 
         <!-- Content + Bouton -->
         <div class="container mx-auto px-8 md:px-20 relative z-10 text-center text-white flex flex-col items-center justify-center min-h-0">
-          <div class="max-w-4xl mx-auto flex flex-col items-center gap-4 md:gap-8">
+          <div class="max-w-4xl mx-auto flex flex-col items-center gap-3 md:gap-8">
             <h2 class="text-2xl md:text-6xl font-serif font-light leading-tight">
               Révéler l'excellence des<br>huiles d'Algérie
             </h2>
@@ -312,19 +312,19 @@
 
     </main>
 
-    <footer class="py-4 md:py-24 border-t border-black/5 mt-0">
+    <footer class="py-3 md:py-24 border-t border-black/5 mt-0">
       <div class="container mx-auto px-8 md:px-20">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-8">
-          <div class="md:col-span-2 space-y-4 md:space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
+          <div class="md:col-span-2 space-y-2 md:space-y-8">
             <div class="text-xl font-serif tracking-[0.2em] uppercase">Huiles d'Olives d'Algérie</div>
             <p class="text-sm font-light text-black/50 max-w-xs leading-relaxed">
               L'excellence de l'huile d'olive d'Algérie, de l'arbre à votre table. Engagement durable et qualité absolue.
             </p>
           </div>
           
-          <div class="space-y-4 md:space-y-6">
+          <div class="space-y-2 md:space-y-6">
             <h4 class="text-[10px] tracking-[0.3em] uppercase font-medium">Menu</h4>
-            <ul class="space-y-4 text-sm font-light text-black/60">
+            <ul class="space-y-2 md:space-y-4 text-sm font-light text-black/60">
               <li><a href="/" class="hover:text-black transition-colors">NOTRE MAISON</a></li>
               <li><a href="/notre-vision.html" class="hover:text-black transition-colors font-medium">La Collection</a></li>
               <li><a href="/la-collection.html" class="hover:text-black transition-colors">À propos de nous</a></li>
@@ -334,7 +334,7 @@
           </div>
         </div>
         
-        <div class="mt-12 pt-4 md:mt-24 md:pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="mt-6 pt-3 md:mt-24 md:pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
           <p class="text-[10px] tracking-[0.2em] uppercase text-black/30">© 2026 Huiles d'Olives d'Algérie. Tous droits réservés.</p>
           <div class="flex items-center gap-8">
              <a href="/admin" class="text-[10px] tracking-[0.2em] uppercase text-black font-medium hover:opacity-70">Admin</a>

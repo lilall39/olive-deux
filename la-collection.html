@@ -47,7 +47,7 @@
         <div class="oil-drip oil-drip-10"></div>
       </div>
       <!-- Section Opportunité (Hero Style) -->
-      <section id="opportunite" class="relative min-h-[85vh] md:min-h-[100vh] flex items-center pt-48 md:pt-64 pb-24 md:pb-32 bg-[#1A2416] overflow-hidden">
+      <section id="opportunite" class="relative min-h-0 md:min-h-[100vh] flex items-center pt-[8.5rem] pb-16 md:pt-64 md:pb-32 bg-[#1A2416] overflow-hidden">
         <div class="container mx-auto px-8 md:px-20 max-w-5xl mx-auto text-center relative z-10 animate-fade-up">
           <h1 class="text-[26px] md:text-[44px] font-serif font-light leading-tight text-white mb-6 md:mb-10">
             Une opportunité de participation
@@ -59,7 +59,7 @@
             <p class="md:whitespace-nowrap">Nous souhaitons l’accompagner aux côtés d’investisseurs partageant cette vision.</p>
           </div>
         </div>
-        <a href="/notre-vision.html" class="absolute bottom-8 right-8 md:bottom-10 md:right-10 z-20 group inline-flex items-center justify-center overflow-hidden border border-white/30 w-40 py-3 px-4 md:w-48 md:py-3 md:px-5 text-[11px] tracking-[0.3em] uppercase transition-all duration-700 hover:border-white bg-[#4E3B31] text-white shrink-0">
+        <a href="/notre-vision.html" class="absolute bottom-8 right-8 md:bottom-10 md:right-10 z-20 group inline-flex items-center justify-center overflow-hidden border border-white/30 w-32 py-2 px-3 text-[10px] md:w-48 md:py-3 md:px-5 md:text-[11px] tracking-[0.3em] uppercase transition-all duration-700 hover:border-white bg-[#4E3B31] text-white shrink-0 whitespace-nowrap">
           <span class="relative z-10">La collection</span>
           <div class="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700 ease-in-out opacity-10"></div>
         </a>
@@ -72,7 +72,7 @@
       </section>
 
       <!-- Section Positionnement (Ancien Hero) -->
-      <section id="marche-investissement" class="relative pt-2 md:pt-8 pb-16 bg-[#C4A463] section-marche-blobs">
+      <section id="marche-investissement" class="relative pt-2 md:pt-8 pb-6 md:pb-16 bg-[#C4A463] section-marche-blobs">
         <!-- Formes organiques animées (huile liquide) -->
         <div class="absolute inset-0 pointer-events-none z-0">
           <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
@@ -81,20 +81,20 @@
         <!-- Overlay subtil pour lier les couleurs -->
         <div class="absolute inset-0 bg-[#C4A463]/10 pointer-events-none z-[1]"></div>
         <!-- Content: Titre centré en haut, puis texte + graphique -->
-        <div class="container mx-auto px-8 md:px-20 relative z-10 pt-12 md:pt-0">
-          <div class="mb-10 md:mb-12 animate-fade-up">
-            <h2 class="text-4xl md:text-5xl font-serif font-light leading-tight text-black text-center">
+        <div class="container mx-auto px-8 md:px-20 relative z-10 pt-4 pb-2 md:pt-0 md:pb-0">
+          <div class="mb-4 md:mb-12 animate-fade-up">
+            <h2 class="text-2xl md:text-5xl font-serif font-light leading-tight text-black text-center">
               Positionnement du marché
             </h2>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16 items-start">
             <!-- Colonne gauche : graphique marché français -->
             <div class="flex flex-col items-start animate-fade-up min-w-0">
-              <p class="text-lg md:text-xl font-semibold text-black/80 max-w-md leading-relaxed text-left mb-8">
+              <p class="text-base md:text-xl font-semibold text-black/80 max-w-md leading-relaxed text-left mb-2 md:mb-8">
                 Le marché français est en pleine progression.
               </p>
               <figure class="w-full max-w-md" aria-label="Graphique en barres du marché français de l'huile d'olive 2023-2030">
-                <svg viewBox="0 0 360 170" class="w-full h-auto" font-family="Lora, serif" font-size="12">
+                <svg viewBox="0 0 360 170" class="w-full h-auto max-h-[140px] md:max-h-none" font-family="Lora, serif" font-size="12">
                   <rect class="chart-bar" x="35" y="90" width="40" height="20" fill="#A8CF9E" rx="2" data-bar-height="20" data-bar-y="90" data-bar-base="110" />
                   <rect class="chart-bar" x="130" y="83" width="40" height="27" fill="#5E8B4E" rx="2" data-bar-height="27" data-bar-y="83" data-bar-base="110" />
                   <rect class="chart-bar" x="225" y="29" width="40" height="81" fill="#1F3D2B" rx="2" data-bar-height="81" data-bar-y="29" data-bar-base="110" />
@@ -105,18 +105,18 @@
                   <text x="245" y="135" text-anchor="middle" fill="#000000" font-weight="700" font-size="12">2030</text>
                   <text x="245" y="164" text-anchor="middle" fill="#1e40af" font-weight="700" font-size="12" data-count-to="2.86" data-count-suffix=" Md $">0 Md $</text>
                 </svg>
-                <figcaption class="mt-4 text-left text-base text-black font-bold">
+                <figcaption class="mt-2 md:mt-4 text-left text-sm md:text-base text-black font-bold">
                   Marché français de l'huile d'olive
                 </figcaption>
               </figure>
             </div>
             <!-- Colonne droite : phrase + graphique alignés à la bordure droite -->
             <div class="flex flex-col items-end animate-fade-up min-w-0">
-              <p class="text-lg md:text-xl font-semibold text-black/80 max-w-md leading-relaxed text-right mb-8">
+              <p class="text-base md:text-xl font-semibold text-black/80 max-w-md leading-relaxed text-right mb-2 md:mb-8">
                 Le marché européen de l'huile d'olive est en croissance continue.
               </p>
               <figure class="w-full max-w-md" aria-label="Graphique en barres du marché européen de l'huile d'olive 2023-2032">
-                <svg viewBox="0 0 380 170" class="w-full h-auto" font-family="Lora, serif" font-size="12">
+                <svg viewBox="0 0 380 170" class="w-full h-auto max-h-[140px] md:max-h-none" font-family="Lora, serif" font-size="12">
                   <rect class="chart-bar" x="25" y="102" width="38" height="8" fill="#1F3D2B" rx="2" data-bar-height="8" data-bar-y="102" data-bar-base="110" />
                   <rect class="chart-bar" x="115" y="93" width="38" height="17" fill="#4a6b4a" rx="2" data-bar-height="17" data-bar-y="93" data-bar-base="110" />
                   <rect class="chart-bar" x="205" y="86" width="38" height="24" fill="#5E8B4E" rx="2" data-bar-height="24" data-bar-y="86" data-bar-base="110" />
@@ -130,7 +130,7 @@
                   <text x="314" y="135" text-anchor="middle" fill="#000000" font-weight="700" font-size="12">2032</text>
                   <text x="314" y="164" text-anchor="middle" fill="#1e40af" font-weight="700" font-size="12" data-count-to="19.7" data-count-suffix=" Mrd USD">0 Mrd USD</text>
                 </svg>
-                <figcaption class="mt-4 text-right text-base text-black font-bold">
+                <figcaption class="mt-2 md:mt-4 text-right text-sm md:text-base text-black font-bold">
                   Marché européen de l'huile d'olive
                 </figcaption>
               </figure>
@@ -138,7 +138,7 @@
           </div>
         </div>
         <!-- Vague en bas du hero (vers section suivante) -->
-        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-10 pointer-events-none translate-y-[1px]">
+        <div class="wave-marche-bottom absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-10 pointer-events-none translate-y-[1px]">
           <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[40px] md:h-[80px]">
             <defs>
               <clipPath id="wave-top-clip">
@@ -153,7 +153,7 @@
       </section>
 
       <!-- Section Développement progressif -->
-      <section id="developpement" class="relative pt-4 md:pt-14 pb-10 md:pb-24 overflow-hidden bg-[#C4A463] section-marche-blobs">
+      <section id="developpement" class="relative pt-2 md:pt-14 pb-6 md:pb-24 overflow-hidden bg-[#C4A463] section-marche-blobs">
         <!-- Blobs animés (même style que section Positionnement du marché) -->
         <div class="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
           <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
@@ -173,57 +173,55 @@
           <div class="oil-drip oil-drip-10"></div>
         </div>
         <div class="container mx-auto px-8 md:px-20 max-w-6xl mx-auto relative z-10">
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-stretch">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-16 items-stretch">
             <!-- Bloc image à gauche (cercle) - centré verticalement entre 2024 et 2027 -->
-            <div class="md:col-span-4 relative flex justify-center items-center order-2 md:order-1 mt-12 md:mt-0 md:pt-32">
-              <div class="relative z-10 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-black/5 shrink-0 shadow-lg">
+            <div class="md:col-span-4 relative flex justify-center items-center order-2 md:order-1 mt-6 md:mt-0 md:pt-32">
+              <div class="relative z-10 w-40 h-40 md:w-80 md:h-80 rounded-full overflow-hidden bg-black/5 shrink-0 shadow-lg">
                 <img src="/nafees-heritage.png" alt="NAFEES L'Héritage - Huile Vierge Extra" class="w-full h-full object-cover object-center animate-slow-zoom-150" />
               </div>
             </div>
             <!-- Timeline à droite -->
             <div class="md:col-span-8 order-1 md:order-2">
-          <h2 class="text-3xl md:text-4xl font-serif font-light leading-tight text-black text-center md:text-left mb-6 md:mb-10">
+          <h2 class="text-2xl md:text-4xl font-serif font-light leading-tight text-black text-center md:text-left mb-4 md:mb-10">
             Un développement progressif
           </h2>
           <div class="relative">
-            <!-- Ligne verticale -->
-            <div class="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-px bg-black/15 -ml-px" aria-hidden="true"></div>
             <!-- Étapes -->
             <div class="space-y-0">
-              <div class="relative flex flex-col md:flex-row md:items-center gap-4 md:gap-12 pb-6 md:pb-12 last:pb-0">
+              <div class="relative flex flex-col md:flex-row md:items-center gap-2 md:gap-12 pb-4 md:pb-12 last:pb-0">
                 <div class="flex items-start md:w-1/2 md:justify-end md:text-right">
-                  <span class="inline-block text-2xl md:text-3xl font-serif font-light text-black/90">2024</span>
+                  <span class="inline-block text-xl md:text-3xl font-serif font-light text-black/90">2024</span>
                 </div>
                 <div class="absolute left-4 md:left-1/2 w-3 h-3 rounded-full bg-black/50 -translate-x-1/2" aria-hidden="true"></div>
-                <div class="md:w-1/2 pl-12 md:pl-12 md:pr-0 md:text-left">
-                  <p class="text-base md:text-lg font-light text-black/85 leading-relaxed">Lancement de la maison et première collection.</p>
+                <div class="md:w-1/2 pl-10 md:pl-12 md:pr-0 md:text-left">
+                  <p class="text-sm md:text-lg font-light text-black/85 leading-relaxed">Lancement de la maison et première collection.</p>
                 </div>
               </div>
-              <div class="relative flex flex-col md:flex-row md:items-center gap-4 md:gap-12 pb-6 md:pb-12 last:pb-0">
+              <div class="relative flex flex-col md:flex-row md:items-center gap-2 md:gap-12 pb-4 md:pb-12 last:pb-0">
                 <div class="flex items-start md:w-1/2 md:justify-end md:text-right">
-                  <span class="inline-block text-2xl md:text-3xl font-serif font-light text-black/90">2025</span>
+                  <span class="inline-block text-xl md:text-3xl font-serif font-light text-black/90">2025</span>
                 </div>
                 <div class="absolute left-4 md:left-1/2 w-3 h-3 rounded-full bg-black/50 -translate-x-1/2" aria-hidden="true"></div>
-                <div class="md:w-1/2 pl-12 md:pl-12 md:pr-0 md:text-left">
-                  <p class="text-base md:text-lg font-light text-black/85 leading-relaxed">Déploiement dans des circuits spécialisés.</p>
+                <div class="md:w-1/2 pl-10 md:pl-12 md:pr-0 md:text-left">
+                  <p class="text-sm md:text-lg font-light text-black/85 leading-relaxed">Déploiement dans des circuits spécialisés.</p>
                 </div>
               </div>
-              <div class="relative flex flex-col md:flex-row md:items-center gap-4 md:gap-12 pb-6 md:pb-12 last:pb-0">
+              <div class="relative flex flex-col md:flex-row md:items-center gap-2 md:gap-12 pb-4 md:pb-12 last:pb-0">
                 <div class="flex items-start md:w-1/2 md:justify-end md:text-right">
-                  <span class="inline-block text-2xl md:text-3xl font-serif font-light text-black/90">2026</span>
+                  <span class="inline-block text-xl md:text-3xl font-serif font-light text-black/90">2026</span>
                 </div>
                 <div class="absolute left-4 md:left-1/2 w-3 h-3 rounded-full bg-black/50 -translate-x-1/2" aria-hidden="true"></div>
-                <div class="md:w-1/2 pl-12 md:pl-12 md:pr-0 md:text-left">
-                  <p class="text-base md:text-lg font-light text-black/85 leading-relaxed">Expansion vers plusieurs marchés européens.</p>
+                <div class="md:w-1/2 pl-10 md:pl-12 md:pr-0 md:text-left">
+                  <p class="text-sm md:text-lg font-light text-black/85 leading-relaxed">Expansion vers plusieurs marchés européens.</p>
                 </div>
               </div>
-              <div class="relative flex flex-col md:flex-row md:items-center gap-4 md:gap-12">
+              <div class="relative flex flex-col md:flex-row md:items-center gap-2 md:gap-12">
                 <div class="flex items-start md:w-1/2 md:justify-end md:text-right">
-                  <span class="inline-block text-2xl md:text-3xl font-serif font-light text-black/90">2027</span>
+                  <span class="inline-block text-xl md:text-3xl font-serif font-light text-black/90">2027</span>
                 </div>
                 <div class="absolute left-4 md:left-1/2 w-3 h-3 rounded-full bg-black/50 -translate-x-1/2" aria-hidden="true"></div>
-                <div class="md:w-1/2 pl-12 md:pl-12 md:pr-0 md:text-left">
-                  <p class="text-base md:text-lg font-light text-black/85 leading-relaxed">Renforcement de la présence et nouvelles sélections.</p>
+                <div class="md:w-1/2 pl-10 md:pl-12 md:pr-0 md:text-left">
+                  <p class="text-sm md:text-lg font-light text-black/85 leading-relaxed">Renforcement de la présence et nouvelles sélections.</p>
                 </div>
               </div>
             </div>
@@ -234,7 +232,7 @@
       </section>
 
       <!-- Section Bandeau final (modèle Notre Maison) -->
-      <section class="relative h-[50vh] md:h-[80vh] w-full overflow-y-auto md:overflow-hidden flex items-start md:items-center justify-center py-6 md:py-0">
+      <section class="relative min-h-0 py-10 md:py-0 md:h-[80vh] w-full overflow-y-auto md:overflow-hidden flex items-center justify-center">
         <div class="absolute inset-0 z-0">
           <img 
             src="/notre-vision-bg.png" 
@@ -243,18 +241,18 @@
           />
           <div class="absolute inset-0 bg-black/40"></div>
         </div>
-        <div class="container mx-auto px-8 md:px-20 pt-6 md:pt-0 pb-6 md:pb-0 relative z-10 text-center text-white">
-          <div class="max-w-4xl mx-auto space-y-3 md:space-y-8">
+        <div class="container mx-auto px-8 md:px-20 py-6 md:py-0 relative z-10 text-center text-white flex flex-col items-center justify-center">
+          <div class="max-w-4xl mx-auto flex flex-col items-center justify-center space-y-3 md:space-y-8 text-center">
             <div class="space-y-1 md:space-y-4">
               <h2 class="text-2xl md:text-6xl font-serif font-light leading-tight">
                 Participer à l'aventure
               </h2>
             </div>
-            <div class="text-base md:text-xl lg:text-2xl font-light text-white/90 max-w-2xl mx-auto leading-relaxed space-y-2 md:space-y-4">
+            <div class="text-base md:text-xl lg:text-2xl font-light text-white/90 max-w-2xl mx-auto leading-relaxed space-y-2 md:space-y-4 text-center">
               <p>Notre maison poursuit aujourd'hui son développement autour d'une sélection exigeante d'huiles d'olive issues de terroirs remarquables.</p>
               <p>Dans cette dynamique, certains partenaires peuvent choisir de prendre part à cette aventure.</p>
             </div>
-            <div class="pt-2 md:pt-8 flex flex-wrap justify-center gap-6 shrink-0">
+            <div class="pt-2 md:pt-8 flex flex-wrap justify-center gap-4 md:gap-6 shrink-0">
               <a href="/contact.html" class="group relative inline-flex items-center justify-center overflow-hidden border border-white/30 w-48 py-3 text-[11px] tracking-[0.3em] uppercase transition-all duration-700 hover:border-white bg-[#1A2416] text-white">
                 <span class="relative z-10">Contact</span>
                 <div class="absolute inset-0 bg-white scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700 ease-in-out opacity-10"></div>
@@ -265,19 +263,19 @@
       </section>
     </main>
 
-    <footer class="py-4 md:py-24 border-t border-black/5 mt-0">
+    <footer class="py-3 md:py-24 border-t border-black/5 mt-0">
       <div class="container mx-auto px-8 md:px-20">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-8">
-          <div class="md:col-span-2 space-y-4 md:space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
+          <div class="md:col-span-2 space-y-2 md:space-y-8">
             <div class="text-xl font-serif tracking-[0.2em] uppercase">Huiles d'Olives d'Algérie</div>
             <p class="text-sm font-light text-black/50 max-w-xs leading-relaxed">
               L'excellence de l'huile d'olive d'Algérie, de l'arbre à votre table. Engagement durable et qualité absolue.
             </p>
           </div>
           
-          <div class="space-y-4 md:space-y-6">
+          <div class="space-y-2 md:space-y-6">
             <h4 class="text-[10px] tracking-[0.3em] uppercase font-medium">Menu</h4>
-            <ul class="space-y-4 text-sm font-light text-black/60">
+            <ul class="space-y-2 md:space-y-4 text-sm font-light text-black/60">
               <li><a href="/" class="hover:text-black transition-colors">NOTRE MAISON</a></li>
               <li><a href="/notre-vision.html" class="hover:text-black transition-colors">La Collection</a></li>
               <li><a href="/la-collection.html" class="hover:text-black transition-colors">À propos de nous</a></li>
@@ -287,7 +285,7 @@
           </div>
         </div>
         
-        <div class="mt-12 pt-4 md:mt-24 md:pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="mt-6 pt-3 md:mt-24 md:pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
           <p class="text-[10px] tracking-[0.2em] uppercase text-black/30">© 2026 Huiles d'Olives d'Algérie. Tous droits réservés.</p>
           <div class="flex items-center gap-8">
              <a href="/admin" class="text-[10px] tracking-[0.2em] uppercase text-black font-medium hover:opacity-70">Admin</a>

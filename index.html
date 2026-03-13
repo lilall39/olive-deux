@@ -32,11 +32,11 @@
       </div>
     </header>
 
-    <main>
-      <section class="relative min-h-[50vh] md:min-h-[70vh] flex items-center pt-28 pb-8 md:pt-60 md:pb-24 -mb-12 md:-mb-12 bg-[#C4A463] overflow-hidden">
-        <!-- Shape Divider - Bord ondulé naturel (Haut) -->
-        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] z-10 pointer-events-none -translate-y-[1px]">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[40px] md:h-[80px] scale-y-[-1]">
+    <main class="pt-[7rem] md:pt-0" id="main-hero-wrap">
+      <section id="hero" class="hero-section-mobile relative min-h-[50vh] md:min-h-[70vh] flex items-start md:items-center pt-4 pb-8 md:pt-60 md:pb-24 -mb-12 md:-mb-12 overflow-hidden" style="background-color: #C4A463;">
+        <!-- Shape Divider - Bord ondulé (Haut) : visible desktop uniquement -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] z-10 pointer-events-none -translate-y-[1px] hidden md:block">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[80px] scale-y-[-1]">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.37,103.4,113.3,111.41,171.21,111.41c107,0,236.17-43.41,321.39-56.44Z" fill="#ffffff"></path>
           </svg>
         </div>
@@ -80,11 +80,11 @@
 
             <!-- Colonne Image (Desktop: 6/12) -->
             <div class="md:col-span-6 order-1 md:order-2">
-              <div class="relative aspect-[4/3] md:aspect-[5/7] overflow-hidden bg-[#ECECE8] opacity-0 animate-fade-up delay-100 shadow-2xl mt-0">
-                <img 
-                  src="/hero-premium-pour.png" 
-                  alt="Huile d’olive d’exception" 
-                  class="w-full h-full object-cover object-center animate-ken-burns"
+              <div class="hero-image-wrap relative aspect-[4/3] md:aspect-[5/7] overflow-hidden opacity-0 animate-fade-up delay-100 shadow-2xl mt-0 w-full" style="background-color: #C4A463;">
+                <img
+                  src="/hero-premium-pour.png"
+                  alt="Huile d’olive d’exception"
+                  class="w-full h-full object-cover object-top md:object-center animate-ken-burns"
                   style="transform-origin: bottom right;"
                 />
                 <!-- Accent subtil doré -->
@@ -513,19 +513,19 @@
       </div>
     </section>
 
-    <footer class="py-4 md:py-24 border-t border-black/5 mt-0">
+    <footer class="py-3 md:py-24 border-t border-black/5 mt-0">
       <div class="container mx-auto px-8 md:px-20">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-8">
-          <div class="md:col-span-2 space-y-4 md:space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
+          <div class="md:col-span-2 space-y-2 md:space-y-8">
             <div class="text-xl font-serif tracking-[0.2em] uppercase">Huiles d'Olives d'Algérie</div>
             <p class="text-sm font-light text-black/50 max-w-xs leading-relaxed">
               L'excellence de l'huile d'olive d'Algérie, de l'arbre à votre table. Engagement durable et qualité absolue.
             </p>
           </div>
           
-          <div class="space-y-4 md:space-y-6">
+          <div class="space-y-2 md:space-y-6">
             <h4 class="text-[10px] tracking-[0.3em] uppercase font-medium">Menu</h4>
-            <ul class="space-y-4 text-sm font-light text-black/60">
+            <ul class="space-y-2 md:space-y-4 text-sm font-light text-black/60">
               <li><a href="/" class="hover:text-black transition-colors">NOTRE MAISON</a></li>
               <li><a href="/notre-vision.html" class="hover:text-black transition-colors">La Collection</a></li>
               <li><a href="/la-collection.html" class="hover:text-black transition-colors">À propos de nous</a></li>
@@ -535,7 +535,7 @@
           </div>
         </div>
         
-        <div class="mt-12 pt-4 md:mt-24 md:pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="mt-6 pt-3 md:mt-24 md:pt-8 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
           <p class="text-[10px] tracking-[0.2em] uppercase text-black/30">© 2026 Huiles d'Olives d'Algérie. Tous droits réservés.</p>
           <div class="flex items-center gap-8">
              <a href="/admin" class="text-[10px] tracking-[0.2em] uppercase text-black font-medium hover:opacity-70">Admin</a>

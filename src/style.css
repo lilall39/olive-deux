@@ -7,6 +7,7 @@
   --color-brand-beige: #F9F7F2;
   --color-brand-olive: #2D3318;
   --color-brand-gold: #D4AF37;
+  --color-hero-bg: #C4A463;
 }
 
 @layer base {
@@ -44,6 +45,23 @@
   /* Positionnement du marché : dégager le titre en haut sur mobile */
   #marche-investissement .container {
     padding-top: 3rem !important;
+  }
+  /* Hero : une seule couleur de fond (marron) sur tout l’écran mobile */
+  #main-hero-wrap {
+    background-color: var(--color-hero-bg) !important;
+  }
+  .hero-section-mobile,
+  .hero-section-mobile .hero-image-wrap {
+    background-color: var(--color-hero-bg) !important;
+  }
+  /* Pas de trait / bordure en bas de la section Développement sur mobile */
+  #developpement {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  /* Supprime le décalage de 1px sous la vague (évite un fin trait) sans toucher au trait de la courbe */
+  #marche-investissement .wave-marche-bottom {
+    transform: translateY(0);
   }
 }
 
@@ -436,6 +454,17 @@ header.menu-open nav a {
   height: 420px;
   object-fit: cover;
   display: block;
+}
+
+@media (max-width: 767px) {
+  .image-block img,
+  .image-block video {
+    width: 100%;
+    max-width: 280px;
+    max-height: 280px;
+    height: auto;
+    aspect-ratio: 1;
+  }
 }
 
 /* Carousel */
