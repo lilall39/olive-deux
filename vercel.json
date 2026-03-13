@@ -1,5 +1,11 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/la-collection", "destination": "/la-collection.html" },
+    { "source": "/notre-vision", "destination": "/notre-vision.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/edition-limitee", "destination": "/edition-limitee.html" }
+  ]
 }

@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Inclure toutes les pages HTML pour que les classes soient générées en production (Vercel) */
+@source "../*.html";
+
 @theme {
   --color-brand-beige: #F9F7F2;
   --color-brand-olive: #2D3318;
