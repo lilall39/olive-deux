@@ -34,7 +34,7 @@
 .block-collection {
   height: auto;
   max-height: 580px;
-  padding: 160px 0 96px;
+  padding: 100px 0 96px;
 }
 
 @media (max-width: 767px) {
@@ -483,10 +483,14 @@ header.menu-open nav a {
 
 @media (min-width: 768px) {
   .section-row {
-    display: grid;
-    grid-template-columns: 420px 1fr;
+    display: grid !important;
+    grid-template-columns: 420px 1fr !important;
     gap: 40px;
     align-items: center;
+  }
+  /* Même écart visuel entre bloc 2 et 3 qu’entre bloc 1 et 2 */
+  #section-curation {
+    margin-top: -10rem !important;
   }
 }
 
